@@ -1,0 +1,54 @@
+/*----------HEADER----------HEADER----------HEADER----------HEADER----------HEADER----------HEADER*/
+header{
+    border: 2px solid #F00;
+    height: 90px;
+}
+
+/*----------BODY----------BODY----------BODY----------BODY----------BODY----------BODY----------BODY*/
+body{
+    background-color: #202124;
+}
+#barra-pesquisa{
+    width: 600px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #323438;
+    background-color: #202124;
+    padding: 10px;
+    margin-bottom: 25px;
+    color: #FFF;
+}
+
+#btn-pesquisar, #btn-estou-sorte{
+    background-color: #303134;
+    color: #FFF;
+    width: 150px;
+    height: 36px;
+    border: 0px;
+    border-radius: 6px;
+}
+
+/*----------FOOTER----------FOOTER----------FOOTER----------FOOTER----------FOOTER----------FOOTER*/
+footer, a{
+    /*background-color: blue;*/
+    color: #59626f;
+    text-decoration: none;
+}
+
+#footer-direita, #footer-esquerda{
+    position: relative;
+}
+
+#footer-esquerda{
+    float: left;
+    width: 400px;
+    border: 2px solid rgb(255, 0, 234);
+}
+
+#footer-direita{
+    float: right;
+    width: 300px;
+    border: 2px solid #0F0;
+}
+
+

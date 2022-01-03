@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso Front-End - Formulários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #4d0561;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+            #desc-header{
+                font-size: 20px;
+            }
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ffed82;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #4d0561;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+    </head>
+    <body>
+        <header>
+            <h2>Curso Front-End - HTML</h2>
+			<p id="desc-header">Formulários</p>
+        </header>
+        <section>
+			<nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></a></li>
+                    <li><a href="M03A01-introducao.html">Introdução</a></a></li>
+                    <li><a href="m03a02-listas_e_links.html">Listas e Links</a></li>
+                    <li><a href="m03a03-formatacao_de_texto.html">Formatação de Textos</a></li>
+                    <li><a href="m03a04-tabelas.html">Tabelas</a></li>
+                    <li><a href="m04a01-layouts.html">Layouts</a></li>
+                    <li><a href="m04a02-formularios.html">Formulários</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Contato</h1>
+                <p>Preencha os campos abaixo:</p>
+
+                <form method="post">
+                    <div>
+                        <label for="nome">Nome</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    
+                    <div>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" name="email" id="email" placeholder="email@exemple.com">
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem</label><br>
+                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                    </div>
+                    
+					<div>
+						<p>
+							<label>Quais linguagens você sabe?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<input type="radio" name="linguagens" value="css"> CSS
+							<input type="radio" name="linguagens" value="javascript"> JavaScript
+						</p>
+					</div>
+					<div>
+						<p>
+							<label>Quais linguagem você prefere?</label>
+							<input type="checkbox" name="linguagens"> HTML
+							<input type="checkbox" name="linguagens"> CSS
+							<input type="checkbox" name="linguagens"> JavaScript
+						</p>
+						<div>
+							<label>Qual a sua cor favorita?</label>
+							<select>
+								<option>Azul</option>
+								<option>Verde</option>
+								<option selected>Vermelho</option>
+							</select>
+
+						</div>
+
+					</div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                    
+                </form>
+
+            </article>
+
+        </section>
+        <footer>
+            <p>Desenvolvido por Marcus Mavini</p>
+        </footer>
+    </body>
+</html>

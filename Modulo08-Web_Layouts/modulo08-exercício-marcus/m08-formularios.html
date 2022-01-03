@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formulários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/modulo-07.css"> -->
+    </head>
+    <body>
+        <header>
+            <h1>Formularios</h1>
+        </header>
+        <section>
+			<nav>
+                <ul class="navegacao">
+                    <li><a href="m08-homepage.html">Homepage</a></a></li>                    
+                    <li><a href="m08-listas-links.html">Listas e Links</a></li>
+                    <li><a href="m08-formatacao-textos.html">Formatação de Textos</a></li>
+                    <li><a href="m08-formularios.html">Formulários</a></li>
+                    <li><a href="m08-cafezinho.html">Vamos Tomar um Café?</a></li>
+                    <li id="menu-circular"><a href="escolher-pagina.html" >Menu Circular ⬤</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h2>Contato</h2>
+                <p>Preencha os campos abaixo:</p>
+
+                <form method="post">
+                    <div class="bordalegal">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    
+                    <div class="bordalegal">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="email@exemple.com">
+                    </div>
+
+                    <div class="bordalegal">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                    </div>
+                    
+					<div class="bordalegal">
+						<p>
+							<label>Quais linguagens você sabe?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<input type="radio" name="linguagens" value="css"> CSS
+							<input type="radio" name="linguagens" value="javascript"> JavaScript
+						</p>
+					</div>
+					<div class="bordalegal">
+						<p>
+							<label>Quais linguagem você prefere?</label>
+							<input type="checkbox" name="linguagens"> HTML
+							<input type="checkbox" name="linguagens"> CSS
+							<input type="checkbox" name="linguagens"> JavaScript
+						</p>
+					</div>
+						<div class="bordalegal">
+							<label>Qual a sua cor favorita?</label>
+							<select>
+								<option id="cor-azul">Azul</option>
+								<option id="cor-verde">Verde</option>
+								<option id="cor-vermelho" selected>Vermelho</option>
+							</select>
+
+						</div>				
+                  
+                       <input type="submit" id="btn-submit" /> 
+                                                         
+                    
+                </form>
+
+            </article>
+
+        </section>
+        <footer>
+            <p>Desenvolvido por Marcus Mavini</p>
+        </footer>
+    </body>
+</html>

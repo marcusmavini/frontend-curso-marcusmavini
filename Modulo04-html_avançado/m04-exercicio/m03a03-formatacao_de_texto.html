@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso Front-End - Formatação de Textos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #4d0561;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+            #desc-header{
+                font-size: 20px;
+            }
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ffed82;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #4d0561;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+    </head>
+    <body>
+        <header>
+            <h2>Curso Front-End - HTML</h2>
+			<p id="desc-header">Formatação de Textos</p>
+        </header>
+        <section>
+			<nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></a></li>
+                    <li><a href="M03A01-introducao.html">Introdução</a></a></li>
+                    <li><a href="m03a02-listas_e_links.html">Listas e Links</a></li>
+                    <li><a href="m03a03-formatacao_de_texto.html">Formatação de Textos</a></li>
+                    <li><a href="m03a04-tabelas.html">Tabelas</a></li>
+                    <li><a href="m04a01-layouts.html">Layouts</a></li>
+                    <li><a href="m04a02-formularios.html">Formulários</a></li>
+                </ul>
+            </nav>
+
+            <article>
+				<h1>Formatação de Textos</h1>
+				<h2>Cabeçalho 2</h2>
+				<h3>Cabeçalho 3</h3>
+				<h4>Cabeçalho 4</h4>
+				<h5>Cabeçalho 5</h5>
+				<h6>Cabeçalho 6</h6>
+				<p> <b>Lorem ipsum dolor sit amet,</b> <i>consectetur adipiscing elit.</i> Donec eros leo, consequat gravida rutrum ut, dignissim nec diam. <del>Nunc leo nibh, aliquet nec dictum at, dapibus sit amet leo.</del> Praesent finibus dui enim. Cras consequat in odio vel scelerisque. Vestibulum non felis et eros efficitur congue ut a ligula. Sed ligula augue, ultricies id purus in, luctus maximus enim. Pellentesque sit amet justo et tellus malesuada tincidunt quis ac urna. Quisque ultricies dolor massa. Vestibulum lobortis quis lacus ut dignissim. Mauris ultricies augue mi. Mauris nunc orci, scelerisque vel ex sed, ullamcorper viverra diam. Pellentesque convallis varius ipsum. Aliquam accumsan, nibh sit amet interdum lobortis, diam eros egestas dolor, eget convallis nisi risus ac lacus. In et laoreet ex, id venenatis odio.</p>
+				
+				<p><strong>Nulla eu maximus quam. In fringilla magna eget quam auctor ultrices.</strong> Nulla consectetur ac eros nec dignissim. Aliquam erat volutpat. <em>Nam non erat ut nulla maximus pretium.</em> Sed vulputate laoreet magna, sit amet vestibulum sem semper ut.<sup>1</sup> Aliquam dignissim finibus ante, vel maximus diam varius at. Cras faucibus augue consequat mi sagittis, <sub>2</sub>at viverra nisi mollis.<small>Duis dictum quam eros, vel pulvinar ligula tempus malesuada.</small> <br>
+				Donec rhoncus blandit ullamcorper. Quisque pulvinar, justo vel commodo mollis, diam nibh dapibus arcu, congue hendrerit odio dolor non velit. Sed vulputate nunc libero, vel posuere velit congue non. Curabitur bibendum, enim nec pharetra dapibus, odio dolor maximus eros, ac ultrices dolor mi vel turpis. Quisque purus mi, congue eget dolor nec, euismod semper tellus. Donec risus turpis, aliquet eget finibus at, mattis vel eros. Donec vel posuere risus.</p>
+		
+				<blockquote>"In eget aliquet mi, vitae lacinia justo. Cras sed velit dolor. Nulla quis tortor non eros interdum sollicitudin eu non lorem. Suspendisse mollis, urna nec egestas gravida, enim neque bibendum nisl, at tincidunt justo orci vitae dolor. Maecenas sagittis eros nibh, in viverra lorem fringilla vitae. Quisque a felis dui. Etiam molestie erat lectus. Vivamus tincidunt gravida orci."
+				</blockquote><br>
+				<a href="originais/original-m03a03-formatacao_de_texto.html"> Ver Original</a>
+            </article>
+
+        </section>
+        <footer>
+            <p>Desenvolvido por Marcus Mavini</p>
+        </footer>
+    </body>
+</html>

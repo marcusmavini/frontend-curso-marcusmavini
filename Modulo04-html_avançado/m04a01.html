@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>HTML - Layouts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+    </head>
+    <body>
+        <header>
+            <h2>Título da Página</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Home</a></a></li>
+                    <li><a href="#sobre">Sobre</a></a></li>
+                    <li><a href="m04a02.html">Contato</a></a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Titulo Artigo</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam sed tortor et mi bibendum ullamcorper ac non tortor.
+                    Sed at pharetra lorem, in imperdiet leo. Curabitur vitae dapibus est,
+                    a auctor massa. Sed a iaculis risus, pharetra molestie ex. Maecenas nec
+                    orci leo. Curabitur aliquam finibus est sed malesuada. Donec odio leo,
+                    ornare sed consequat in, hendrerit eget libero. Phasellus a venenatis
+                    tellus, non porta leo. Integer bibendum ex quam.
+                </p>
+                    Integer condimentum maximus turpis in malesuada. Aenean mollis
+                    laoreet nulla a bibendum. Phasellus quis arcu aliquet, vestibulum nulla vel,
+                    dignissim elit. Etiam vitae egestas libero. Nunc fermentum tortor scelerisque,
+                    viverra felis eu, euismod neque. In feugiat felis sed viverra ultricies.
+                    Morbi nec tortor vehicula, elementum lacus ac, sollicitudin risus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem ante,
+                    accumsan eu tincidunt ac, tincidunt vel ipsum. Proin in purus vestibulum, feugiat
+                    neque at, dictum urna. Sed consequat molestie massa eu suscipit. Pellentesque pretium
+                    mattis turpis id volutpat. Phasellus dolor nunc, egestas ac convallis id, pellentesque
+                    eget ipsum. Quisque et egestas quam, eget mollis leo. Vivamus elementum placerat neque
+                    at dignissim.
+                <p>
+
+                </p>
+            </article>
+
+        </section>
+        <footer>
+            <p>Desenvolvido por Marcus Mavini</p>
+        </footer>
+    </body>
+</html>

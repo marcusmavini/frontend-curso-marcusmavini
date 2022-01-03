@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cafézinho</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/modulo-07.css"> -->
+	</head>
+	<body>
+		<header>
+			<h1>Vamos Tomar um Café?</h1>
+		</header>
+		<section>
+			<nav>
+                <ul class="navegacao">
+                    <li><a href="m08-homepage.html">Homepage</a></a></li>                    
+                    <li><a href="m08-listas-links.html">Listas e Links</a></li>
+                    <li><a href="m08-formatacao-textos.html">Formatação de Textos</a></li>
+                    <li><a href="m08-formularios.html">Formulários</a></li>
+					<li><a href="m08-cafezinho.html">Vamos Tomar um Café?</a></li>
+					<li id="menu-circular"><a href="escolher-pagina.html" >Menu Circular ⬤</a></li>
+				</ul>
+            </nav>
+
+			<article>
+					<div class="circulo">
+						<img src="img/coffee-cup.svg" width="200" alt="Marcus Mavini Foto de Perfil" >
+					</div>
+					<div id="div-audio">
+						<audio controls autoplay>
+							<source src="audio/SpanishMoss-ChrisHaugen.mp3" type="audio/ogg">
+							<source src="audio/SpanishMoss-ChrisHaugen.mp3" type="audio/mpeg">
+					  		Seu navegador não suporta o elemento audio.
+						</audio>
+					</div>
+					
+					<h2>Cafézinho</h2>
+					<p>Tome este tempo para relaxar e me contar uma história boa!</p>
+					<form>	
+						
+						
+						<div class="div-cafe">
+							<label>Nome</label>
+							<input type="text" id="cafe-nome" name="cafe-nome" class="inputs-cafe">
+						</div>
+						<div class="div-cafe">
+							<label>E-mail</label>
+							<input type="email" id="cafe-email" name="cafe-email" class="inputs-cafe" placeholder="exemplo@email.com">
+						</div>
+						<div class="div-cafe">
+							<label>O que te motiva a ser um desenvolvedor?</label>
+							<textarea id="motiva" rows="3" ></textarea>
+						</div>
+						
+						<div class="div-cafe">
+							<label class="label-cafe">Me conta uma história engraçada envolvendo Desenvolvimento Front-End</label><br>
+							<textarea id="motiva" rows="3" ></textarea>
+						</div>
+						
+						<input type="submit" id="btn-submit">
+					</form>			
+
+            </article>
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Marcus Mavini</p>
+		</footer>
+	</body>
+</html>

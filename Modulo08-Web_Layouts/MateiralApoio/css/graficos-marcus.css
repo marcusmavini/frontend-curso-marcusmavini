@@ -1,0 +1,29 @@
+div{
+    margin: 40px auto;
+}
+
+/*CRIA UM CIRCULO*/
+#grafico-01{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#grafico-01 img{
+    width: 100%;
+}
+
+/*CRIA UM TRIÂNGULO*/
+#grafico-02{
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;
+    background-color: transparent;
+}
+
+#imagem-vetorial{
+    width: 200px;
+}

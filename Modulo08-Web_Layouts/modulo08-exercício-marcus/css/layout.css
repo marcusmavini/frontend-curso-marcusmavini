@@ -1,0 +1,286 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+
+/*----HEADER--------HEADER--------HEADER--------HEADER--------HEADER----*/
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f4fefd;
+}
+
+header p{
+	color: #8d6742;
+}
+
+/*----BODY--------BODY--------BODY--------BODY--------BODY----*/
+body {
+	background-color: #1B2223;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+	margin: 10px 10px 10px 0;
+}
+
+h3{
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.5rem;
+}
+h5{
+	font-size: 1rem;
+}
+h6{
+	font-size: 0.8rem;
+}
+
+
+form {
+	padding: 10px;
+	color: #1B2223;
+}
+
+.bordalegal{
+	border: 2px solid #0ef6cc;
+    border-bottom: 0px;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin: 0.8rem;
+}
+
+
+form div {
+	background: #fff;
+	border-style: double;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+#form-cafe{
+	background: none;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	/*color: #66F;*/
+}
+
+.label-cafe{
+	margin-bottom: 0;
+}
+
+.div-cafe{
+	margin: 10px 10px 20px 0;
+	background: transparent;
+	border-style: none;
+	padding: 0;
+	color: #fff;
+}
+
+#btn-submit{
+	width: 150px;
+	font-size: 2rem;
+	border: none;
+	background-color: #1B2223;
+	border-radius: 25px;
+	color: #FFF;
+}
+
+#btn-submit:hover{
+	background-color: #0ef6cc;
+	color: #1B2223;
+	filter: brightness(1px 1px 10px #0ef6cc);
+}
+
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+.inputs-cafe{
+	width: 200px;
+}
+
+audio{
+	opacity: 0.3;
+	height: 25px;
+}
+
+#menu-circular{
+	margin-top: 35px;
+}
+
+/*#div-audio{
+	width: 305px;
+	border: 2px solid #0f0;
+}*/
+
+textarea:active{
+	border-color: #0ef6cc;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+	color: #0ef6cc;
+}
+
+article a:hover{
+	text-decoration: underline;
+}
+
+.link-underline{
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #00bb99;
+}
+
+a:active {
+	color: #096;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+	margin-bottom: 10px;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section {
+	background-color: #3a4f50;
+  border-radius: 25px;
+  margin: 0px 30px 0px 30px;
+  filter: drop-shadow(1px 1px 10px #0ef6cc);
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navegacao {
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: #0ef6cc;
+	font-size: 1.9rem;
+	margin-bottom: 5px;
+}
+
+.navegacao li a:hover {
+	color: #f4fefd;
+	filter: drop-shadow(1px 1px 5px #0ef6cc);
+}
+
+
+
+/*#modelo{
+	border: 2px solid #ecb592;
+}
+#modelo:hover{
+	border: 2px solid #8d6742;
+}*/
+
+
+/*----FOOTER----*/
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+footer p{
+	margin: 10px;
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    /*margin: 10px auto;*/
+    margin-bottom: 20px;
+    overflow: hidden;
+    filter: drop-shadow(2px 4px 10px #0ef6cc);
+	float: right;
+}
+
+article div img{
+	width: 100%;
+}
+
+#motiva{
+	width: 350px;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
