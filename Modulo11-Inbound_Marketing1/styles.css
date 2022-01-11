@@ -63,6 +63,11 @@ p {
     color: #333;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 ol {
     margin-left: 30px;
 }
@@ -138,6 +143,11 @@ footer small {
 }
 
 /*==========COGNITO FORMS==========*/
-.cog-branding__powered {
-    visibility: hidden !important;
+#tenho-interesse {
+    width: 100%;
+    background-color: #bccfe0;
+}
+
+.cog-form__container {
+    background-color: #bccfe0 !important;
 }
