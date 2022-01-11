@@ -136,3 +136,8 @@ footer small {
     font-size: 90%;
     display: block;
 }
+
+/*==========COGNITO FORMS==========*/
+.cog-branding__powered {
+    visibility: hidden !important;
+}
