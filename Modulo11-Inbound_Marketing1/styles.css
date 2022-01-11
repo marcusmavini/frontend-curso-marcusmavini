@@ -64,7 +64,7 @@ p {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -150,4 +150,16 @@ footer small {
 
 .cog-form__container {
     background-color: #bccfe0 !important;
+}
+
+/*==========BRAKPOINTS==========*/
+@media (max-width: 425px) {
+    section nav, section article {
+        width: 100%;
+    }
+
+    .container{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 }
