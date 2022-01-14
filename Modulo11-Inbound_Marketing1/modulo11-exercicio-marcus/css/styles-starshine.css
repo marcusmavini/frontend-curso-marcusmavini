@@ -10,7 +10,6 @@ body {
 .main-container {
     width: 100vw;
     display: block;
-    margin: 0 auto;
 }
 
 .container {
@@ -25,9 +24,8 @@ header {
     background: #172238;
     display: block;
     float: left;
-    width: 100%;
-    
-    border-bottom: 1px solid #254159;
+    width: 100%;    
+    border-bottom: 0px solid #dca62c;
 }
 /*==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========*/
 h1 {
@@ -66,16 +64,15 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
-
-ol, ul {
+ol, h3~ol, h2~ul{
     margin-left: 30px;
 }
 
 ol li, ul li{
     font-size: 1.4rem;
-    color: #454545;
     line-height: 1.3;
 }
 
@@ -106,7 +103,7 @@ nav li {
     background-color: #172238;
 }
 nav li:hover {
-    background-color: #172238;
+    background-color: #1d2b47;
 }
 
 nav a {
@@ -121,6 +118,9 @@ nav a:hover {
 
 .redes-sociais-imgs {
     width: 3rem;
+    display: block;
+    float: left;
+    margin-right: 5px;
 }
 
 section article {
@@ -133,6 +133,11 @@ section article div ol ~ p{
     margin-top: 10px;
 }
 
+a~p {
+    margin-top: 35px;
+}
+
+/*===========FOOTER==========*/
 footer {
     background-color: #172238;
     color: #fff;
