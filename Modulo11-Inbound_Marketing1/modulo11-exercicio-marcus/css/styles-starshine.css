@@ -10,6 +10,8 @@ body {
 .main-container {
     width: 100vw;
     display: block;
+    margin: 0 auto;
+    float: left;
 }
 
 .container {
@@ -22,10 +24,10 @@ body {
 
 header {
     background: #172238;
+    width: 100%;
     display: block;
-    float: left;
-    width: 100%;    
-    border-bottom: 0px solid #dca62c;
+    float: left;        
+    border-bottom: 2px solid #dca62c;
 }
 /*==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========*/
 h1 {
@@ -120,7 +122,7 @@ nav a:hover {
     width: 3rem;
     display: block;
     float: left;
-    margin-right: 5px;
+   margin-right: 5px;
 }
 
 section article {
@@ -143,7 +145,7 @@ footer {
     color: #fff;
     display: block;
     float: left;
-    width: 100%;    
+    width: 100%;
     padding: 20px;
 }
 
@@ -176,5 +178,9 @@ footer small {
     .container{
         padding-left: 1%;
         padding-right: 1%;
+    }
+
+    .main-container {
+        width: 87vw;
     }
 }
