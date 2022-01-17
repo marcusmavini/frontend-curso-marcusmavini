@@ -1,0 +1,269 @@
+html {
+    font-size: 65.5%;
+}
+
+body {
+    background-color: #f5f5f5;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+
+.container {
+    width: 98%;
+    max-width: 98%;
+    padding: 0;
+    margin: 0 1%;
+    display: block;
+    float: left;
+}
+
+header {
+    background: #172238;
+    width: 100%;
+    display: block;
+    float: left;        
+    border-bottom: 2px solid #dca62c;
+    padding: 20px 0;
+}
+/*==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========*/
+h1 {
+    font-size: 2.4rem;
+    color: #172238;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2c6ec4;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #2c6ec4;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #4d8fe6;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*==================================================================================================*/
+p {
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ol, h3~ol, h2~ul{
+    margin-left: 30px;
+}
+
+ol li, ul li{
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+section {
+    font-size: 1.5rem;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+/*==========MENU DE NAVEGAÇÃO==========MENU DE NAVEGAÇÃO==========*/
+section nav {
+    display: block;
+    float: left;
+    width: 20%;
+    background-color: #fff;
+}
+
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav li {
+    margin: 1px 20px 1px 0;
+    padding: 10px;
+    background-color: #172238;
+}
+nav li:hover {
+    background-color: #1d2b47;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #dca62c;
+}
+/**===============================================================*/
+
+.redes-sociais-imgs {
+    width: 3rem;
+    display: block;
+    float: left;
+   margin-right: 5px;
+}
+
+section article {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+section article div ol ~ p{
+    margin-top: 10px;
+}
+
+a~p {
+    margin-top: 35px;
+}
+
+/*===========FOOTER==========*/
+footer {
+    background-color: #172238;
+    color: #fff;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+footer small {
+    font-size: 90%;
+    display: block;
+}
+
+/*COGNITO FORMS===============================*/
+#tenho-interesse {
+    width: 100%;
+    background-color: #aaccdb;
+}
+
+.cog-form__container {
+    background-color: #aaccdb !important;
+}
+
+/*BANNER=======================================*/
+#banner {
+    background-image: url(https://blog.redehost.com.br/wp-content/uploads/2015/05/criar-site-wordpress.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+.legenda-container {
+    float: right;
+    width: 30vw;
+    margin: 10vh 10vh 0 0;
+}
+
+.legenda {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .6);
+    margin-bottom: 2rem;
+}
+
+.legenda h5, .legenda h4 {
+    color: #172238;
+}
+
+.button-cta {
+    display: inline;
+    background-color: #dca62c;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 1px 1px 4px #454545;
+    width: 155px;
+    text-align: center;
+    font-weight: 300;
+    float: right;    
+}
+/*SAIBA MAIS==============================*/
+
+#saiba-mais {
+    background-color: #eaeff3;
+}
+
+#saiba-mais p, #saiba-mais img {
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+#saiba-mais p{
+    font-size: 2.5rem;
+}
+
+#saiba-mais img {
+    width: 500px;
+}
+
+/*DÚDIVAS FREQUENTES===========================*/
+
+
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: 700;
+    color: #172238;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+dd {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/*BREAKPOINTS==========*/
+@media (max-width: 425px) {
+    section nav, section article, img {
+        width: 100%;
+    }
+
+    .container{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .main-container {
+        width: 87vw;
+    }
+}
