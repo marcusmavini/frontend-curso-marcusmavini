@@ -194,10 +194,12 @@ footer small {
     margin-bottom: 2rem;
 }
 
-.legenda h5, .legenda h4 {
+.legenda h5 {
+    color: #48556e;
+}
+.legenda h4{
     color: #172238;
 }
-
 .button-cta {
     display: inline;
     background-color: #dca62c;
@@ -254,7 +256,9 @@ dd {
 
 /*BREAKPOINTS==========*/
 @media (max-width: 425px) {
-    section nav, section article, img {
+    
+    section nav, section article, img, #saiba-mais p,
+    header, .main-container, footer {
         width: 100%;
     }
 
@@ -263,7 +267,29 @@ dd {
         padding-right: 1%;
     }
 
-    .main-container {
-        width: 87vw;
+    .legenda-container {
+        width: 70%;
+        height: 100px;
+    }
+
+    .legenda h4 {
+        font-size: 2rem;
+    }
+    .legenda h5 {
+        color: #48556e;
+        font-size: 1.5rem;
+    }
+    #saiba-mais p, #saiba-mais img {
+        padding: 20px 0;
+    }
+
+    #redes-sociais{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav {
+        margin-bottom: 20px;
     }
 }
