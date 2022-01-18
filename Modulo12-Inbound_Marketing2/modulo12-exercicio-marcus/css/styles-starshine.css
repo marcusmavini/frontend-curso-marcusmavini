@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #f5f5f5;    
+    background-color: #a1a7cb;    
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,36 +24,42 @@ body {
 }
 
 header {
-    background: #172238;
+    background: #2e4d7c;
     width: 100%;
     display: block;
     float: left;        
-    border-bottom: 2px solid #dca62c;
+    border-bottom: 2px solid #3b64a0;
     padding: 20px 0;
+}
+
+.container-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========FONT-SIZE DOS TÍTULOS E SUBTÍTULOS==========*/
 h1 {
     font-size: 2.4rem;
-    color: #172238;
+    color: #5584ca;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2rem;
-    color: #2c6ec4;
+    color: #5584ca;
     margin-bottom: 15px;
 }
 
 h3 {
     font-size: 1.8rem;
-    color: #2c6ec4;
+    color: #5584ca;
     margin-bottom: 20px;
     padding-top: 10px;
 }
 
 h4 {
     font-size: 1.6rem;
-    color: #4d8fe6;
+    color: #6b9fed;
     margin-bottom: 10px;
     padding-top: 10px;
 }
@@ -62,7 +68,7 @@ h4 {
 p {
     margin-bottom: 10px;
     line-height: 1.3;
-    color: #333;
+    color: #000;
 }
 
 img {
@@ -104,10 +110,10 @@ nav ul {
 nav li {
     margin: 1px 20px 1px 0;
     padding: 10px;
-    background-color: #172238;
+    background-color: #6b9fed;
 }
 nav li:hover {
-    background-color: #1d2b47;
+    background-color: #6b9fed;
 }
 
 nav a {
@@ -116,15 +122,19 @@ nav a {
 }
 nav a:hover {
     text-decoration: none;
-    color: #dca62c;
+    color: #5ac994;
 }
 /**===============================================================*/
 
 .redes-sociais-imgs {
     width: 3rem;
-    display: block;
-    float: left;
-   margin-right: 5px;
+    margin-right: 5px;
+}
+
+#redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section article {
@@ -143,7 +153,7 @@ a~p {
 
 /*===========FOOTER==========*/
 footer {
-    background-color: #172238;
+    background-color: #2e4d7c;
     color: #fff;
     display: block;
     float: left;
@@ -164,11 +174,15 @@ footer small {
 /*COGNITO FORMS===============================*/
 #tenho-interesse {
     width: 100%;
-    background-color: #aaccdb;
+    background-color: #cad0f7;
+}
+
+#tenho-interesse p {
+    color: #000;
 }
 
 .cog-form__container {
-    background-color: #aaccdb !important;
+    background-color: #cad0f7 !important;
 }
 
 /*BANNER=======================================*/
@@ -195,29 +209,35 @@ footer small {
 }
 
 .legenda h5 {
-    color: #48556e;
+    color: #406daf;
 }
 .legenda h4{
-    color: #172238;
+    color: #295291;
 }
 .button-cta {
     display: inline;
-    background-color: #dca62c;
+    background-color: #6b9fed;
     border-radius: 25px;
     color: #fff;
     font-size: 2rem;
     text-decoration: none;
-    padding: 10px;
-    box-shadow: 1px 1px 4px #454545;
-    width: 155px;
+    padding: 15px;
+    box-shadow: 1px 1px 0.75rem black;
+    width: 160px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     float: right;    
+    margin-right: 20px;
 }
+
+.button-cta:hover {
+    background-color: #79abf7;
+}
+
 /*SAIBA MAIS==============================*/
 
 #saiba-mais {
-    background-color: #eaeff3;
+    background-color: #fff;
 }
 
 #saiba-mais p, #saiba-mais img {
@@ -236,7 +256,9 @@ footer small {
 }
 
 /*DÚDIVAS FREQUENTES===========================*/
-
+#duvidas-frequentes {
+    background-color: #f1f3ff;
+}
 
 dl {
     margin: 20px 0;
@@ -244,14 +266,14 @@ dl {
 
 dt {
     font-weight: 700;
-    color: #172238;
+    color: #000;
     margin-bottom: 5px;
     font-size: large;
 }
 
 dd {
     margin-bottom: 15px;
-    color: #333;
+    color: rgb(27, 27, 27);
 }
 
 /*BREAKPOINTS==========*/
