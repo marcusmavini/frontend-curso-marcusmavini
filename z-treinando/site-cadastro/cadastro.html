@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Cadastro</title>
         <meta charset="UTF-8" >
-   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro</title>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+
+        <!--Estilo-->
+        <link rel="stylesheet" type="text/css" href="estilo-cadastro.css">
     </head>
     <body>
         <header>
-
-        </header>
-
-        <article align="center">
-                <h1>Cadastro</h1>
-                
-                <form method="get">
-                    <label>Nome</label>
-                    <input type="text" id="f_nome" name="f_nome" placeholder="Digite seu nome" /><br>
-                    
-                    <label>Sobrenome</label>
-                    <input type="text" id="f_snome" name="f_snome"  /><br>
-                    
-                    <label>Sexo</label>
-                    <input type="text" id="f_nome" name="f_nome" placeholder="Digite seu nome" /><br>
-                    
-                    <label>Nome</label>
-                    <input type="text" id="f_nome" name="f_nome" placeholder="Digite seu nome" /><br>
-                    
-                    <label>Nome</label>
-                    <input type="text" id="f_nome" name="f_nome" placeholder="Digite seu nome" /><br>
-                    
-                    <label>Nome</label>
-                    <input type="text" id="f_nome" name="f_nome" placeholder="Digite seu nome" /><br>
-                    
-                    <label>Nome</label>
-                    <input type="text" id="f_nome" name="f_nome" placeholder="Digite seu nome" /><br>
-                </form>
-                
             
-        </article>
+        </header>
+        <section>
+            <article>
+                <h1>Cadastro</h1>
+                <div class="container">
+                     <form method="get">
+                        <label>Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="caixa"/><br>
+                        
+                        <label>Sobrenome</label>
+                        <input type="text" id="snome" name="snome" class="caixa" /><br>
+                        
+                        <label>E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" class="caixa"/><br>
+                        
+                        <label>Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite seu nome" class="caixa"/><br>
+                        
+                        <label>Confirmação de Senha</label>
+                        <input type="password" id="conf-senha" name="conf-senha" placeholder="Digite seu nome" class="caixa"/><br>
+                        
+                        <input type="submit" value="Finalizar Cadastro" id="btn-cadastro" name="btn-cadastro">
+                    </form> 
+                </div>
+            </article>
+        </section>
+        
         <footer>
-
+            <p>Desenvolvido por Marcus Mavini</p>
         </footer>   
     </body>
 </html>
