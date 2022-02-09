@@ -2,44 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col">                    
+                    <ul class="nav justify-content-end">
+                        <li class="nav-itens"><a class="nav-link actve" href="">Home</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#contato">Contato</a></li>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h1>Coluna 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla vero necessitatibus veniam. Porro nesciunt illo impedit reprehenderit dolore ab excepturi ut suscipit est iusto officiis, quo sapiente in facilis!</p>
-                <a class="btn btn-lg btn-success">Botão</a>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <h2>Coluna 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid voluptate quo fuga modi id vitae dolore ad dolorem. Laboriosam fuga magnam iste recusandae dolor a, sed dolorum dolores architecto.</p>
-                <a class="btn btn-sm btn-danger">Botão</a>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre Nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla vero necessitatibus veniam. Porro nesciunt illo impedit reprehenderit dolore ab excepturi ut suscipit est iusto officiis, quo sapiente in facilis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla vero necessitatibus veniam. Porro nesciunt illo impedit reprehenderit dolore ab excepturi ut suscipit est iusto officiis, quo sapiente in facilis!</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col">
+                    <h2>Produtos</h2>
+                    <div class="card">
+                        <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                        <div class="card-body">
+                            <h5 class="card-title">Pc Bom</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dignissimos magnam
+                            </p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                        <div class="card-body">
+                            <h5 class="card-title">Pc Bom</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dignissimos magnam
+                            </p>
+                                <a class="btn btn-primary" href="#produto-2">Ver Produto</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                        <div class="card-body">
+                            <h5 class="card-title">Pc Bom</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dignissimos magnam
+                            </p>
+                                <a class="btn btn-primary" href="#produto-3">Ver Produto</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="form-control" name="email" placeholder="Digite seu E-mail">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" name="mensagem" rows="5" id="mensagem">
+
+                            </textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 1</h5>
+                    <button type="button" class="btn-close" data-bs-modal="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">       
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>                 
+                        
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>100$</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>200$</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>300$</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+               <div class="modal-footer">
+                    <!--<button type="button" class="btn-close" data-bs-modal="modal" aria-label="Close"></button>-->
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-sm-12" >Linha 1 - Coluna 1</div>
-            <div class="col-md-7 col-sm-12">Linha 1 - Coluna 2</div>
-        </div>
-        <div class="row">
-            <div class="col">Linha 2 - Coluna 1</div>
-        </div>
-        <div class="row">
-            <div class="col">Linha 3 - Coluna 1</div>
-            <div class="col">Linha 3 - Coluna 2</div>
-            <div class="col">Linha 3 - Coluna 3</div>
-        </div>
-    </div>
-
+   <!--Script do site-->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
