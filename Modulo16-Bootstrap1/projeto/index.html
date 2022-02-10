@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
-    <title>Document</title>
+    <title>Starshine</title>
 </head>
 <body>
-    <header>
+    <header> <!--Cabeçalho da página-->
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1>Logo</h1>
+                <div class="col-md-7 col-sm-12">
+                    <img src="./img/starshine-logo-desktop.png" alt="Logo da Empresa"> <!--Imagem Logo-->
                 </div>
-                <div class="col">                    
-                    <ul class="nav justify-content-end">
+                <div class="col-md-5 col-sm-12">                    
+                    <ul class="nav justify-content-end"> <!--Menu de navegação superior-->
                         <li class="nav-itens"><a class="nav-link actve" href="">Home</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#servicos">Serviços</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#contato">Contato</a></li>
 
                     </ul>
@@ -28,59 +28,58 @@
         </div>
     </header>
 
-    <section id="sobre">
+    <section id="sobre"> <!--Sobre Nós-->
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
-                    <h2>Sobre Nós</h2>
+                    <h2>Sobre Nós</h2><!--Descrição do Sobre nós-->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla vero necessitatibus veniam. Porro nesciunt illo impedit reprehenderit dolore ab excepturi ut suscipit est iusto officiis, quo sapiente in facilis!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla vero necessitatibus veniam. Porro nesciunt illo impedit reprehenderit dolore ab excepturi ut suscipit est iusto officiis, quo sapiente in facilis!</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                    <img src="./img/img-sobre-nos.jpg" class="img-fluid" alt="Foto de luis gomes no Pexels"><!--Imagem do sobre nós-->
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="produtos">
-        <div class="conatiner">
+    <section id="servicos"><!--Produtos/Serviços-->
+        <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Produtos</h2>
-                    <div class="card">
-                        <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                    <h2>Serviços</h2>
+                    <div class="card"> <!--Primeiro serviço - 1 Estrela-->
+                        <img src="./img/html5-logo.png" class="img-fluid " width="200" alt="Setup de um PC">
                         <div class="card-body">
-                            <h5 class="card-title">Pc Bom</h5>
+                            <h5 class="card-title">1 Estrela</h5>
                             <p class="card-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dignissimos magnam
+                                <strong>HTML</strong> - Usando somente HTML, nós estruturamos seu site completo. Organizado de maneira lógica e limpa.
                             </p>
                                 <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
                             </p>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                    <div class="card"><!--Segundo serviço - 2 Estrelas-->
+                        <img src="./img/css-logo.png" width="200" class="img-fluid" alt="Setup de um PC">
                         <div class="card-body">
-                            <h5 class="card-title">Pc Bom</h5>
+                            <h5 class="card-title">2 Estrelas</h5>
                             <p class="card-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dignissimos magnam
+                                <strong>HTML + CSS</strong> | A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.
                             </p>
-                                <a class="btn btn-primary" href="#produto-2">Ver Produto</a>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
                             </p>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <img src="./img/setup-pc.jpg" class="img-fluid" alt="Setup de um PC">
+                    <div class="card"> <!--Terceiro serviço - 3 Estrelas-->
+                        <img src="./img/html-css-js-logo.png" class="img-fluid" alt="Setup de um PC" id="card-03">
                         <div class="card-body">
-                            <h5 class="card-title">Pc Bom</h5>
+                            <h5 class="card-title">3 Estrelas</h5>
                             <p class="card-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dignissimos magnam
+                                <strong>HTML + CSS + JS</strong> | Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.
                             </p>
-                                <a class="btn btn-primary" href="#produto-3">Ver Produto</a>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
                             </p>
                         </div>
                     </div>
@@ -89,14 +88,15 @@
         </div>
     </section>
     
-    <section id="contato">
+    <section id="contato"> <!--Contato-->
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h2>Contato</h2>
                     <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
+                    <div id="img-contato"><!--<img src="./img/img-contato.jpg" id="pos-img-contato" class="img-fluid" alt="Uma pessoa mostrando um código para outra - Foto de olia danilevich no Pexels">--></div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12"><!--Formuilário de contato-->
                     <form class="form">
                         <div class="input-group">
                             <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">
@@ -119,42 +119,102 @@
         </div>
     </section>
 
+    <!--MODAL 1
+        Popup do primeiro serviço - 1 Estrela        
+     -->
+
     <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
-                    <button type="button" class="btn-close" data-bs-modal="modal" aria-label="Close"></button>
+                    <h5 class="modal-title">1 Estrela - HTML</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover table-striped">       
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>                 
-                        
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>100$</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>200$</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>300$</td>
-                            </tr>
-                        </tbody>
-                        
-                    </table>
+                    <p>Usando somente HTML, nós estruturamos seu site completo. Organizado de maneira lógica e limpa.</p>
+                    <img src="./img/img-1-servico.png" class="img-fluid" alt="Código html">
+                    <h6>O serviço contém:</h6>
+                    <ul class="list-group-item-success">
+                        <li>Estrutura HTML organizada</li>
+                        <li>Comentários para ajudar na localização</li>
+                        <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                        <li>Index + 3 Páginas</li>
+                    </ul>
                 </div>
                <div class="modal-footer">
-                    <!--<button type="button" class="btn-close" data-bs-modal="modal" aria-label="Close"></button>-->
+                    <div><p class="text-success">R$ 100,00</p></div>
+                    <button type="button" class="btn btn-success">Contratar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--MODAL 2
+        Popup do segundo serviço - 2 Estrelas     
+     -->
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">2 Estrelas - HTML + CSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.</p>
+                    <img src="./img/img-2-servico.png" class="img-fluid" alt="Código html">
+                    <h6>O serviço contém:</h6>
+                    <ul>
+                        <li class="list-group-item-success">Estruturas HTML e CSS organizadas</li>
+                        <li>Comentários para ajudar na localização</li>
+                        <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                        <li class="list-group-item-success">Index + 4 Páginas</li>
+                        <li class="list-group-item-success">Site responsivo</li>
+                        <li class="list-group-item-success">Layout para Smartphones</li>
+                    </ul>
+                </div>
+               <div class="modal-footer">
+                    <div><p class="text-success">R$ 180</p></div>
+                    <button type="button" class="btn btn-success">Contratar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--MODAL 3
+        Popup do terceiro serviço - 3 Estrelas     
+     -->
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">3 Estrelas - HTML + CSS + JS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.</p>
+                    <img src="./img/img-3-servico.png" class="img-fluid" alt="Código html">
+                    <h6>O serviço contém:</h6>
+                    <ul>
+                        <li class="list-group-item-success">Estruturas HTML, CSS e JS organizadas</li>
+                        <li>Comentários para ajudar na localização</li>
+                        <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                        <li class="list-group-item-success">Index + 5 Páginas</li>
+                        <li>Site responsivo</li>
+                        <li>Layout para Smartphones</li>
+                        <li class="list-group-item-success">Validação para Formulários</li>
+                    </ul>
+                </div>
+               <div class="modal-footer">
+                    <div><p class="text-success">R$ 255</p></div>
+                    <button type="button" class="btn btn-success">Contratar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
                 </div>
             </div>
         </div>

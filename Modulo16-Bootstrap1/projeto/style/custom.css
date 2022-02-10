@@ -4,11 +4,44 @@
     margin: 5px;
 }
 
-sectio{
+section{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
 input, textarea{
     margin-bottom: 1rem;
+}
+
+.card img {
+    padding: 1rem 0.5rem;
+}
+
+#card-03 {
+    padding: 4.2rem 0.5rem 1rem 0.5rem;
+}
+
+#img-contato {
+    width: 100%;
+    height: 12.3rem;
+    overflow: hidden;
+    background-image: url(../img/img-contato.jpg);
+    background-size: cover;
+    background-position-y: -2rem;
+    border-radius: 2rem 0;
+}
+
+#preco {
+    float: left;
+}
+
+.text-success {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 425px) {
+    #img-contato{
+        margin-bottom: 2rem;
+    }
+
 }

@@ -1,4 +1,5 @@
 # Bootstrap
+
 - Framework ou biblioteca desenvolvimento
 - Modular
 - Componentes ricos
@@ -7,9 +8,10 @@
 - Responsivo
 - Mobile-first
 - Amplamente utilizada
-- Cross browser 
+- Cross browser
 
 ## Biblioteca x Framework
+
 - Biblioteca: oferece objetos / classes prontas para uso
 - Framework: oferece um conjunto de bibliotecas
 - Biblioteca: recurso para trabalhar
@@ -18,6 +20,7 @@
 - Framework: te ensina a chegar
 
 ## Desenvolvimento ágil
+
 - Metodologias: Scrum, Kanban, XP
 - Entrega de valor para o negócio
 - Ciclos evolutivos
@@ -27,23 +30,27 @@
 - Estar envolvido x comprometido
 
 ## Vantagens
+
 - Uso simples
 - Menos código
 - Abstração de estilos
-- Documentação completa: https://getbootstrap.com/
+- Documentação completa: <https://getbootstrap.com/>
 
 ## Desvantagens
+
 - Uso excessivo
 - Override de estilos (sobreposição)
 - Abstração de estilos
 
 ### Com Bootstrap
-```
+
+```html
  <a class="btn btn-lg">Botão</a>
 ```
 
 ### Sem Bootstrap
-```
+
+```html
  <a class="botao botao-grande">Botão</a>
 
  <style>
