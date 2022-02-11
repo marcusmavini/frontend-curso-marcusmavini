@@ -2,6 +2,7 @@
     width: 32%;
     float: left;
     margin: 5px;
+    filter: drop-shadow(1px 1px 5px rgb(226, 226, 226));
 }
 
 section{
@@ -15,11 +16,17 @@ input, textarea{
 
 .card img {
     padding: 1rem 0.5rem;
+    margin: 0 auto;
 }
 
-#card-03 {
-    padding: 4.2rem 0.5rem 1rem 0.5rem;
+#carouselExampleFade{
+    filter: drop-shadow(1px 1px 5px rgb(161, 161, 161));
 }
+
+/*#card-03 {
+    padding: 4.2rem 0.5rem 1rem 0.5rem;
+}*/
+
 
 #img-contato {
     width: 100%;
@@ -37,6 +44,10 @@ input, textarea{
 
 .text-success {
     font-size: 1.5rem;
+}
+
+.modal-body img {
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 425px) {
