@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
-                    <img src="./img/starshine-logo-desktop.png" alt="Logo da Empresa"> <!--Imagem Logo-->
+                    <img src="./img/starshine-logo-desktop.png" class="img-fluid" alt="Logo da Empresa"> <!--Imagem Logo-->
                 </div>
                 <div class="col-md-5 col-sm-12">                    
-                    <ul class="nav justify-content-end"> <!--Menu de navegação superior-->
+                    <ul class="nav justify-content-md-end"> <!--Menu de navegação superior-->
                         <li class="nav-itens"><a class="nav-link actve" href="">Home</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#servicos">Serviços</a></li>
@@ -31,7 +31,7 @@
     <section id="sobre"> <!--Sobre Nós-->
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div id="desc-sobre" class="col-md-7 col-sm-12">
                     <!--Descrição do Sobre nós-->
                     <p class="fs-5">Nossa empresa tem o foco em desenvolver sites simples para todos. Totalmente funcionais e otimizados para a web e mobile.</p>
                     <p class="fs-5">
@@ -73,12 +73,12 @@
             <div class="row">
                 <div class="col">
                     <h2>Serviços</h2>
-                    <div class="card"> <!--Primeiro serviço - 1 Estrela-->
+                    <div class="card col-sm-12"> <!--Primeiro serviço - 1 Estrela-->
                         <img src="./img/servico1-img.png" class="img-fluid" width="300" alt="HTML">
                         <div class="card-body">
                             <h5 class="card-title">1 Estrela</h5>
                             <p class="card-text">
-                                <strong>HTML</strong> - Usando somente HTML, nós estruturamos seu site completo. Organizado de maneira lógica e limpa.
+                                Usando somente <strong>HTML</strong>, nós estruturamos seu site completo. Organizado de maneira lógica e limpa. Para você estilizar depois.
                             </p>
                                 <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
                             </p>
@@ -90,7 +90,7 @@
                         <div class="card-body">
                             <h5 class="card-title">2 Estrelas</h5>
                             <p class="card-text">
-                                <strong>HTML + CSS</strong> | A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.
+                                A estrutura do <strong>HTML</strong> e do <strong>CSS</strong> organizadas e totalmente funcionais, conversando muito bem um com o outro.
                             </p>
                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
                             </p>
@@ -102,7 +102,7 @@
                         <div class="card-body">
                             <h5 class="card-title">3 Estrelas</h5>
                             <p class="card-text">
-                                <strong>HTML + CSS + JS</strong> | Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.
+                                Um site completo no âmbito do Front-End, <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Bem estruturado, estiloso e dinâmico.
                             </p>
                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
                             </p>
@@ -132,7 +132,7 @@
 
                         <div class="input-group">
                             <!--<label for="mensagem" class="form-label">Mensagem</label>-->
-                            <textarea class="form-control" name="mensagem" rows="5" id="mensagem">
+                            <textarea aria-label="Mensagem" class="form-control" name="mensagem" rows="5" id="mensagem">
 
                             </textarea>
                         </div>
@@ -143,6 +143,18 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; Starshine. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por: Marcus Mavini</p>
+                </div>
+            </div>
+             
+        </div>        
+    </footer>
 
     <!--MODAL 1
         Popup do primeiro serviço - 1 Estrela        
