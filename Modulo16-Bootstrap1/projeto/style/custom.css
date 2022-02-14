@@ -56,6 +56,11 @@ footer p{
     text-align: center;
 }
 
+#logo{
+    display: block;
+    margin: 0 auto;
+}
+
 /*TABLET*/
 @media (max-width: 768px) {
     #img-contato{
@@ -72,7 +77,7 @@ footer p{
     }
 
     ul li{
-        font-size: smaller;
+        font-size: larger;
     }
 
     .nav-link{
