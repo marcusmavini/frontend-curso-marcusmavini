@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
+    <!--Estilos para Cusotmização-->
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
+    <title>Starshine</title>
+</head>
+<body>
+    <header> <!--Cabeçalho da página-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 justify-content-center">
+                    <img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"> <!--Imagem Logo-->
+                </div>
+                <div class="col-12">                    
+                    <ul class="nav justify-content-center"> <!--Menu de navegação superior-->
+                        <li class="nav-itens"><a class="nav-link actve" href="index.html">Home</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="index.html #sobre">Sobre</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="index.html #servicos">Serviços</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="index.html #contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <section id="cadastro"> <!--Cadastro-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Cadastro</h2>
+                    <p>Faça seu cadastro para receber nossos produtos na sua casa</p>
+                    <!-- <div id="img-contato">-->
+                    </div>
+                </div>
+                
+                <form class="form form-row needs-validation"><!--Formuilário de cadastro-->                
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group has-validation">
+                                <label for="validationCustomName">Nome</label>
+                                <input type="text" class="form-control" id="validationCustomName" aria-describedby="inputGroupPrepend" required name="nome" placeholder="Digite seu nome completo" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group has-validation">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" aria-describedby="inputGroupPrepend" required name="email" id="email" placeholder="Digite seu E-mail" required>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" placeholder="Endereço" name="endereco" id="endereco" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="numEndereco">Nº</label>
+                            <input type="text" class="form-control" placeholder="Número" name="numEndereco" id="numEndereco" required>    
+                        </div>
+                        <div class="col-md-3">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" placeholder="Casa, Ap, Bloco..." name="complemento" id="complemento" required>
+                        </div>
+                    </div>
+
+                    <div class="row">                  
+                        <div class="col">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" class="form-control" required>
+                                <option value="">Selecione um Estado</option>
+                                <option value="">Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espirito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select> 
+                        </div>  
+                        
+                        <div class="col">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" placeholder="Cidade" name="cidade" id="cidade" required>
+                        </div>
+                        
+                        <div class="col">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" name="cep" id="cep" required>
+                        </div>
+                    </div>                       
+                    
+                    <div class="row">
+                        <div class="col">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" name="senha" id="senha">
+                        </div>
+                        <div class="col">
+                            <label for="confSenha">Confirmação de Senha</label>
+                            <input type="password" class="form-control" name="confSenha" id="confSenha">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">                        
+                            <div class="form-check">                            
+                                <input type="checkbox" name="promocionais" id="promocionais">
+                                <label for="promocionais" class="form-check-label">Aceito receber mensagens promocionais</label>
+                            </div>
+                        </div>
+                    </div>                  
+                    
+                    <button type="submit" class="btn btn-lg btn-success" >Finalizar Cadastro</button>
+                </form>
+                
+                <!--<p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades</p>-->
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>&copy; Starshine. Todos os direitos reservados.</p>
+                        <p>Desenvolvido por: Marcus Mavini</p>
+                    </div>
+                </div>
+                
+            </div>        
+        </footer>
+        
+        <!--MODAL 1
+            Popup do primeiro serviço - 1 Estrela        
+        -->
+        
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Inscrever-me na lista</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Preencha os campos para se inscrever para receber novidades e promoções</p>
+                        
+                        <form action="" class="form-inline">
+                            <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="Nome">
+                            <input type="email" class="form-control form-control-sm mb-2" name="email" placeholder="E-mail" required>
+                            <button type="submit" class="btn btn-success mb-2 btn-sm">Receber Novidades</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--MODAL 2
+            Popup do segundo serviço - 2 Estrelas     
+        -->
+        
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">2 Estrelas - HTML + CSS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.</p>
+                        <img src="./img/img-2-servico.png" class="img-fluid" alt="Código html">
+                        <h6>O serviço contém:</h6>
+                        <ul>
+                            <li class="list-group-item-success">Estruturas HTML e CSS organizadas</li>
+                            <li>Comentários para ajudar na localização</li>
+                            <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                            <li class="list-group-item-success">Index + 4 Páginas</li>
+                            <li class="list-group-item-success">Site responsivo</li>
+                            <li class="list-group-item-success">Layout para Smartphones</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <div><p class="text-success">R$ 180</p></div>
+                        <button type="button" class="btn btn-success">Contratar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!--MODAL 3
+            Popup do terceiro serviço - 3 Estrelas     
+        -->
+        
+        <div class="modal fade" id="modal-3">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">3 Estrelas - HTML + CSS + JS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.</p>
+                        <img src="./img/img-3-servico.png" class="img-fluid" alt="Código html">
+                        <h6>O serviço contém:</h6>
+                        <ul>
+                            <li class="list-group-item-success">Estruturas HTML, CSS e JS organizadas</li>
+                            <li>Comentários para ajudar na localização</li>
+                            <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                            <li class="list-group-item-success">Index + 5 Páginas</li>
+                            <li>Site responsivo</li>
+                            <li>Layout para Smartphones</li>
+                            <li class="list-group-item-success">Validação para Formulários</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <div><p class="text-success">R$ 255</p></div>
+                        <button type="button" class="btn btn-success">Contratar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Script do Bootstrap-->
+        <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--Script do Font Awesome-->
+        <script src="./libs/fontawesome/js/all.min.js"></script>
+        <!--<script src="https://kit.fontawesome.com/d7d6e85a38.js" crossorigin="anonymous"></script>-->
+    </body>
+    </html>
