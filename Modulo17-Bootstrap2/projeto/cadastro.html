@@ -11,12 +11,19 @@
     <!--Estilos para Cusotmização-->
     <link rel="stylesheet" href="./style/custom.css">
     <link rel="stylesheet" href="./style/custom-form.css">
-    <title>Starshine</title>
+    <title>Starshine - Cadastro</title>
 </head>
 <body>
     <header> <!--Cabeçalho da página-->
+        <div class="col-md-12">
+            <ul class="nav justify-content-end">
+                <li class="nav-itens"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#modal-login" >Login</a></li>
+                <li class="nav-itens"><a class="nav-link btn" href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </div>
         <div class="container">
             <div class="row">
+                
                 <div class="col-12 justify-content-center">
                     <img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"> <!--Imagem Logo-->
                 </div>
@@ -43,39 +50,39 @@
                     </div>
                 </div>
                 
-                <form class="form form-row needs-validation"><!--Formuilário de cadastro-->                
+                <form class="form form-row needs-validation" onsubmit="confirmacaoSenha(this); return false;"><!--Formuilário de cadastro-->                
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-6 col-sm-12">
                             <div class="input-group has-validation">
-                                <label for="validationCustomName">Nome</label>
-                                <input type="text" class="form-control" id="validationCustomName" aria-describedby="inputGroupPrepend" required name="nome" placeholder="Digite seu nome completo" required>
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6 col-sm-12">
                             <div class="input-group has-validation">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" aria-describedby="inputGroupPrepend" required name="email" id="email" placeholder="Digite seu E-mail" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu E-mail" required>
                             </div>
                         </div>
                     </div>                    
                     
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-7 col-sm-12">
                             <label for="endereco">Endereço</label>
                             <input type="text" class="form-control" placeholder="Endereço" name="endereco" id="endereco" required>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4">
                             <label for="numEndereco">Nº</label>
                             <input type="text" class="form-control" placeholder="Número" name="numEndereco" id="numEndereco" required>    
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-8">
                             <label for="complemento">Complemento</label>
                             <input type="text" class="form-control" placeholder="Casa, Ap, Bloco..." name="complemento" id="complemento" required>
                         </div>
                     </div>
 
                     <div class="row">                  
-                        <div class="col">
+                        <div class="col-md-4 col-sm-6">
                             <label for="estado">Estado</label>
                             <select name="estado" id="estado" class="form-control" required>
                                 <option value="">Selecione um Estado</option>
@@ -110,30 +117,30 @@
                             </select> 
                         </div>  
                         
-                        <div class="col">
+                        <div class="col-md-4 col-sm-6">
                             <label for="cidade">Cidade</label>
                             <input type="text" class="form-control" placeholder="Cidade" name="cidade" id="cidade" required>
                         </div>
                         
-                        <div class="col">
+                        <div class="col-md-4 col-sm-12">
                             <label for="cep">CEP</label>
                             <input type="text" class="form-control" name="cep" id="cep" required>
                         </div>
                     </div>                       
                     
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-6 col-sm-12">
                             <label for="senha">Senha</label>
-                            <input type="password" class="form-control" name="senha" id="senha">
+                            <input type="password" class="form-control" name="senha" id="senha" required>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6 col-sm-12">
                             <label for="confSenha">Confirmação de Senha</label>
-                            <input type="password" class="form-control" name="confSenha" id="confSenha">
+                            <input type="password" class="form-control" name="confSenha" id="confSenha" required>
                         </div>
                     </div>
                     
                     <div class="row">
-                        <div class="col">                        
+                        <div class="col col-sm-12">                        
                             <div class="form-check">                            
                                 <input type="checkbox" name="promocionais" id="promocionais">
                                 <label for="promocionais" class="form-check-label">Aceito receber mensagens promocionais</label>
@@ -159,108 +166,43 @@
                 
             </div>        
         </footer>
-        
-        <!--MODAL 1
-            Popup do primeiro serviço - 1 Estrela        
-        -->
-        
-        <div class="modal fade" id="modal-1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Inscrever-me na lista</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Preencha os campos para se inscrever para receber novidades e promoções</p>
-                        
-                        <form action="" class="form-inline">
-                            <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="Nome">
-                            <input type="email" class="form-control form-control-sm mb-2" name="email" placeholder="E-mail" required>
-                            <button type="submit" class="btn btn-success mb-2 btn-sm">Receber Novidades</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
+        <!--MODAL LOGIN
+    Popup do Modal de login     
+-->
+
+<div class="modal fade" id="modal-login">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+                <form class="form">
+                    <div class="input-group has-validation">
+                        <input type="email" class="form-control" id="validationCustomName" aria-describedby="inputGroupPrepend" required name="login-email" placeholder="E-mail" required>
+                    </div>
+                    
+                    <div class="input-group has-validation">
+                        <input type="password" class="form-control" aria-describedby="inputGroupPrepend" required name="login-senha" id="login-senha" placeholder="Senha" required>
+                    </div>     
+                    <button type="submit" class="btn btn-success">Login</button>                    
+                </form>
+                <p>Não possui login? <a href="cadastro.html">Cadastre-se</a></p>       
+            </div> 
+            <!--<div class="modal-footer">                    
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>-->
         </div>
-        
-        
-        <!--MODAL 2
-            Popup do segundo serviço - 2 Estrelas     
-        -->
-        
-        <div class="modal fade" id="modal-2">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">2 Estrelas - HTML + CSS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.</p>
-                        <img src="./img/img-2-servico.png" class="img-fluid" alt="Código html">
-                        <h6>O serviço contém:</h6>
-                        <ul>
-                            <li class="list-group-item-success">Estruturas HTML e CSS organizadas</li>
-                            <li>Comentários para ajudar na localização</li>
-                            <li>Foco na <strong>Arquitetura de Informação</strong></li>
-                            <li class="list-group-item-success">Index + 4 Páginas</li>
-                            <li class="list-group-item-success">Site responsivo</li>
-                            <li class="list-group-item-success">Layout para Smartphones</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <div><p class="text-success">R$ 180</p></div>
-                        <button type="button" class="btn btn-success">Contratar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <!--MODAL 3
-            Popup do terceiro serviço - 3 Estrelas     
-        -->
-        
-        <div class="modal fade" id="modal-3">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">3 Estrelas - HTML + CSS + JS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.</p>
-                        <img src="./img/img-3-servico.png" class="img-fluid" alt="Código html">
-                        <h6>O serviço contém:</h6>
-                        <ul>
-                            <li class="list-group-item-success">Estruturas HTML, CSS e JS organizadas</li>
-                            <li>Comentários para ajudar na localização</li>
-                            <li>Foco na <strong>Arquitetura de Informação</strong></li>
-                            <li class="list-group-item-success">Index + 5 Páginas</li>
-                            <li>Site responsivo</li>
-                            <li>Layout para Smartphones</li>
-                            <li class="list-group-item-success">Validação para Formulários</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <div><p class="text-success">R$ 255</p></div>
-                        <button type="button" class="btn btn-success">Contratar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
         
         <!--Script do Bootstrap-->
         <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!--Script do Font Awesome-->
         <script src="./libs/fontawesome/js/all.min.js"></script>
+        <!--Custom JS-->
+        <script src="./js/custom.js"></script>
         <!--<script src="https://kit.fontawesome.com/d7d6e85a38.js" crossorigin="anonymous"></script>-->
     </body>
     </html>

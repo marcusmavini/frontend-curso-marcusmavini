@@ -14,67 +14,73 @@
 </head>
 <body>
     <header> <!--Cabeçalho da página-->
+        <div class="col-md-12">
+            <ul class="nav justify-content-end">
+                <li class="nav-itens"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#modal-login" >Login</a></li>
+                <li class="nav-itens"><a class="nav-link btn" href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </div>
         <div class="container">
             <div class="row">
+                
                 <div class="col-12 justify-content-center">
                     <img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"> <!--Imagem Logo-->
                 </div>
                 <div class="col-12">                    
                     <ul class="nav justify-content-center"> <!--Menu de navegação superior-->
-                        <li class="nav-itens"><a class="nav-link actve" href="">Home</a></li>
+                        <li class="nav-itens"><a class="nav-link actve" href="#">Home</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#servicos">Serviços</a></li>
                         <li class="nav-itens"><a class="nav-link" href="#contato">Contato</a></li>
-
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-
+    
     <section id="carrossel">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">                  
-                <img src="./img/slide-sobre-1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Código Limpo</h5>
-                  <p>Escrevemos com o foco na Arquitetura de Informação e na organização.
-                  </p>
+                <div class="carousel-item active">                  
+                    <img src="./img/slide-sobre-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Código Limpo</h5>
+                        <p>Escrevemos com o foco na Arquitetura de Informação e na organização.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/slide-sobre-2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Ambiente Amigável</h5>
-                  <p>Aqui nós trabalhamos contentes, para producir um produto final que deixe nossos clientes contentes também</p>
+                <div class="carousel-item">
+                    <img src="./img/slide-sobre-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ambiente Amigável</h5>
+                        <p>Aqui nós trabalhamos contentes, para producir um produto final que deixe nossos clientes contentes também</p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/slide-sobre-3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>OS Melhores Profissionais</h5>
-                  <p>Temos os melhores nomes do desenvolvimento web no Brasil.</p>
+                <div class="carousel-item">
+                    <img src="./img/slide-sobre-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>OS Melhores Profissionais</h5>
+                        <p>Temos os melhores nomes do desenvolvimento web no Brasil.</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
         
     </section>
-
+    
     <section id="sobre"> <!--Sobre Nós-->
         <div class="container">
             <div class="row">
@@ -89,32 +95,32 @@
                 <!--<div class="col-md-5 col-sm-12">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/slide-sobre-1.jpg" class="d-block w-100" alt="Foto de luis gomes no Pexels">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/slide-sobre-2.jpg" class="d-block w-100" alt="Foto de hitesh choudhary no Pexels">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/slide-sobre-3.jpg" class="d-block w-100" alt="Foto de Christina Morillo no Pexels">
-                          </div>
+                            <div class="carousel-item active">
+                                <img src="./img/slide-sobre-1.jpg" class="d-block w-100" alt="Foto de luis gomes no Pexels">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide-sobre-2.jpg" class="d-block w-100" alt="Foto de hitesh choudhary no Pexels">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide-sobre-3.jpg" class="d-block w-100" alt="Foto de Christina Morillo no Pexels">
+                            </div>
                         </div>
-                                             
+                        
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>-->
+                    </div>-->
                     <!--<img src="./img/img-sobre-nos.jpg" class="img-fluid" alt="Foto de luis gomes no Pexels">--><!--Imagem do sobre nós-->
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="servicos"><!--Produtos/Serviços-->
         <div class="container">
             <div class="row">
@@ -127,187 +133,217 @@
                             <p class="card-text">
                                 Usando somente <strong>HTML</strong>, nós estruturamos seu site completo. Organizado de maneira lógica e limpa. Para você estilizar depois.
                             </p>
-                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card"><!--Segundo serviço - 2 Estrelas-->
-                        <img src="./img/servico2-img.png" width="300" class="img-fluid" alt="HTML + CSS">
-                        <div class="card-body">
-                            <h5 class="card-title">2 Estrelas</h5>
-                            <p class="card-text">
-                                A estrutura do <strong>HTML</strong> e do <strong>CSS</strong> organizadas e totalmente funcionais, conversando muito bem um com o outro.
-                            </p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card"> <!--Terceiro serviço - 3 Estrelas-->
-                        <img src="./img/servico3-img.png" width="300" class="img-fluid" alt="HTML + CSS + JS">
-                        <div class="card-body">
-                            <h5 class="card-title">3 Estrelas</h5>
-                            <p class="card-text">
-                                Um site completo no âmbito do Front-End, <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Bem estruturado, estiloso e dinâmico.
-                            </p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
-                            </p>
-                        </div>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contato"> <!--Contato-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
-                    <div id="img-contato"><!--<img src="./img/img-contato.jpg" id="pos-img-contato" class="img-fluid" alt="Uma pessoa mostrando um código para outra - Foto de olia danilevich no Pexels">--></div>
-                </div>
-                <div class="col-md-6 col-sm-12"><!--Formuilário de contato-->
-                    <form class="form needs-validation">
-                        <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationCustomName" aria-describedby="inputGroupPrepend" required name="nome" placeholder="Digite seu nome">
-                        </div>
-                        <div class="input-group has-validation">
-                            <input type="email" class="form-control" aria-describedby="inputGroupPrepend" required name="email" placeholder="Digite seu E-mail">
-                        </div>
-
-                        <div class="input-group">
-                            <!--<label for="mensagem" class="form-label">Mensagem</label>-->
-                            <textarea aria-label="Mensagem" class="form-control" name="mensagem" rows="5" id="mensagem">
-
-                            </textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-success" >Solicitar Cotação</button>
-                    </form>
+                
+                <div class="card"><!--Segundo serviço - 2 Estrelas-->
+                    <img src="./img/servico2-img.png" width="300" class="img-fluid" alt="HTML + CSS">
+                    <div class="card-body">
+                        <h5 class="card-title">2 Estrelas</h5>
+                        <p class="card-text">
+                            A estrutura do <strong>HTML</strong> e do <strong>CSS</strong> organizadas e totalmente funcionais, conversando muito bem um com o outro.
+                        </p>
+                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p>&copy; Starshine. Todos os direitos reservados.</p>
-                    <p>Desenvolvido por: Marcus Mavini</p>
-                </div>
-            </div>
-             
-        </div>        
-    </footer>
-
-    <!--MODAL 1
-        Popup do primeiro serviço - 1 Estrela        
-     -->
-
-    <div class="modal fade" id="modal-1">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">1 Estrela - HTML</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Usando somente HTML, nós estruturamos seu site completo. Organizado de maneira lógica e limpa.</p>
-                    <img src="./img/img-1-servico.png" class="img-fluid" alt="Código html">
-                    <h6>O serviço contém:</h6>
-                    <ul class="list-group-item-success">
-                        <li>Estrutura HTML organizada</li>
-                        <li>Comentários para ajudar na localização</li>
-                        <li>Foco na <strong>Arquitetura de Informação</strong></li>
-                        <li>Index + 3 Páginas</li>
-                    </ul>
-                </div>
-               <div class="modal-footer">
-                    <div><p class="text-success">R$ 100,00</p></div>
-                    <button type="button" class="btn btn-success">Contratar</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
-                </div>
+            
+            <div class="card"> <!--Terceiro serviço - 3 Estrelas-->
+                <img src="./img/servico3-img.png" width="300" class="img-fluid" alt="HTML + CSS + JS">
+                <div class="card-body">
+                    <h5 class="card-title">3 Estrelas</h5>
+                    <p class="card-text">
+                        Um site completo no âmbito do Front-End, <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Bem estruturado, estiloso e dinâmico.
+                    </p>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
+                </p>
             </div>
         </div>
     </div>
+</div>
+</div>
+</section>
 
-
-    <!--MODAL 2
-        Popup do segundo serviço - 2 Estrelas     
-     -->
-
-    <div class="modal fade" id="modal-2">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">2 Estrelas - HTML + CSS</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.</p>
-                    <img src="./img/img-2-servico.png" class="img-fluid" alt="Código html">
-                    <h6>O serviço contém:</h6>
-                    <ul>
-                        <li class="list-group-item-success">Estruturas HTML e CSS organizadas</li>
-                        <li>Comentários para ajudar na localização</li>
-                        <li>Foco na <strong>Arquitetura de Informação</strong></li>
-                        <li class="list-group-item-success">Index + 4 Páginas</li>
-                        <li class="list-group-item-success">Site responsivo</li>
-                        <li class="list-group-item-success">Layout para Smartphones</li>
-                    </ul>
-                </div>
-               <div class="modal-footer">
-                    <div><p class="text-success">R$ 180</p></div>
-                    <button type="button" class="btn btn-success">Contratar</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
-                </div>
+<section id="contato"> <!--Contato-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Contato</h2>
+                <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
+                <div id="img-contato"><!--<img src="./img/img-contato.jpg" id="pos-img-contato" class="img-fluid" alt="Uma pessoa mostrando um código para outra - Foto de olia danilevich no Pexels">--></div>
             </div>
-
-        </div>
-    </div>
-
-
-    <!--MODAL 3
-        Popup do terceiro serviço - 3 Estrelas     
-     -->
-
-    <div class="modal fade" id="modal-3">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">3 Estrelas - HTML + CSS + JS</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.</p>
-                    <img src="./img/img-3-servico.png" class="img-fluid" alt="Código html">
-                    <h6>O serviço contém:</h6>
-                    <ul>
-                        <li class="list-group-item-success">Estruturas HTML, CSS e JS organizadas</li>
-                        <li>Comentários para ajudar na localização</li>
-                        <li>Foco na <strong>Arquitetura de Informação</strong></li>
-                        <li class="list-group-item-success">Index + 5 Páginas</li>
-                        <li>Site responsivo</li>
-                        <li>Layout para Smartphones</li>
-                        <li class="list-group-item-success">Validação para Formulários</li>
-                    </ul>
-                </div>
-               <div class="modal-footer">
-                    <div><p class="text-success">R$ 255</p></div>
-                    <button type="button" class="btn btn-success">Contratar</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
-                </div>
+            <div class="col-md-6 col-sm-12"><!--Formuilário de contato-->
+                <form class="form needs-validation">
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="nome" aria-describedby="inputGroupPrepend" required name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-group has-validation">
+                        <input type="email" class="form-control" aria-describedby="inputGroupPrepend" required name="email" placeholder="Digite seu E-mail">
+                    </div>
+                    
+                    <div class="input-group">
+                        <!--<label for="mensagem" class="form-label">Mensagem</label>-->
+                        <textarea aria-label="Mensagem" class="form-control" name="mensagem" rows="5" id="mensagem">
+                            
+                        </textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-lg btn-success" >Solicitar Cotação</button>
+                </form>
             </div>
         </div>
     </div>
+</section>
 
-   <!--Script do Bootstrap-->
-   <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <!--Script do Font Awesome-->
-   <script src="./libs/fontawesome/js/all.min.js"></script>
-   <!--<script src="https://kit.fontawesome.com/d7d6e85a38.js" crossorigin="anonymous"></script>-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>&copy; Starshine. Todos os direitos reservados.</p>
+                <p>Desenvolvido por: Marcus Mavini</p>
+            </div>
+        </div>
+        
+    </div>        
+</footer>
+
+<!--MODAL 1
+    Popup do primeiro serviço - 1 Estrela        
+-->
+
+<div class="modal fade" id="modal-1">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">1 Estrela - HTML</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Usando somente HTML, nós estruturamos seu site completo. Organizado de maneira lógica e limpa.</p>
+                <img src="./img/img-1-servico.png" class="img-fluid" alt="Código html">
+                <h6>O serviço contém:</h6>
+                <ul class="list-group-item-success">
+                    <li>Estrutura HTML organizada</li>
+                    <li>Comentários para ajudar na localização</li>
+                    <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                    <li>Index + 3 Páginas</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <div><p class="text-success">R$ 100,00</p></div>
+                <button type="button" class="btn btn-success">Contratar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--MODAL 2
+    Popup do segundo serviço - 2 Estrelas     
+-->
+
+<div class="modal fade" id="modal-2">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">2 Estrelas - HTML + CSS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>A estrutura do HTML e do CSS organizadas, limpas e totalmente funcionais, conversando muito bem um com o outro.</p>
+                <img src="./img/img-2-servico.png" class="img-fluid" alt="Código html">
+                <h6>O serviço contém:</h6>
+                <ul>
+                    <li class="list-group-item-success">Estruturas HTML e CSS organizadas</li>
+                    <li>Comentários para ajudar na localização</li>
+                    <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                    <li class="list-group-item-success">Index + 4 Páginas</li>
+                    <li class="list-group-item-success">Site responsivo</li>
+                    <li class="list-group-item-success">Layout para Smartphones</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <div><p class="text-success">R$ 180</p></div>
+                <button type="button" class="btn btn-success">Contratar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<!--MODAL 3
+    Popup do terceiro serviço - 3 Estrelas     
+-->
+
+<div class="modal fade" id="modal-3">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">3 Estrelas - HTML + CSS + JS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Um site completo no âmbito do Front-End. Bem estruturado, estiloso e dinâmico.</p>
+                <img src="./img/img-3-servico.png" class="img-fluid" alt="Código html">
+                <h6>O serviço contém:</h6>
+                <ul>
+                    <li class="list-group-item-success">Estruturas HTML, CSS e JS organizadas</li>
+                    <li>Comentários para ajudar na localização</li>
+                    <li>Foco na <strong>Arquitetura de Informação</strong></li>
+                    <li class="list-group-item-success">Index + 5 Páginas</li>
+                    <li>Site responsivo</li>
+                    <li>Layout para Smartphones</li>
+                    <li class="list-group-item-success">Validação para Formulários</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <div><p class="text-success">R$ 255</p></div>
+                <button type="button" class="btn btn-success">Contratar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL LOGIN
+    Popup do Modal de login     
+-->
+
+<div class="modal fade" id="modal-login">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form">
+                    <div class="input-group has-validation">
+                        <input type="email" class="form-control" id="validationCustomName" aria-describedby="inputGroupPrepend" required name="login-email" placeholder="E-mail" required>
+                    </div>
+                    
+                    <div class="input-group has-validation">
+                        <input type="password" class="form-control" aria-describedby="inputGroupPrepend" required name="login-senha" id="login-senha" placeholder="Senha" required>
+                    </div>     
+                    <button type="submit" class="btn btn-success">Login</button>                    
+                </form>
+                <p>Não possui login? <a href="cadastro.html">Cadastre-se</a></p>       
+            </div> 
+            <!--<div class="modal-footer">                    
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<!--Script do Bootstrap-->
+<script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Script do Font Awesome-->
+<script src="./libs/fontawesome/js/all.min.js"></script>
+<!--<script src="https://kit.fontawesome.com/d7d6e85a38.js" crossorigin="anonymous"></script>-->
 </body>
 </html>
