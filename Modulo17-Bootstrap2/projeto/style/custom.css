@@ -134,6 +134,14 @@ footer p{
     color: #fff;
 }
 
+.form-check{
+    padding-left: 0;
+}
+
+#cadastro button{
+    margin-top: 1rem;
+}
+
 
 
 /*TABLET*/
@@ -141,6 +149,20 @@ footer p{
 
     .card{
         width: 31%;
+    }   
+
+    .card a{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #sobre{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    #carrossel{
+        padding-bottom: .5rem;
     }
 
     #desc-sobre{
@@ -155,12 +177,33 @@ footer p{
         margin-top: 3rem;
     }
 
+    .form-check{
+        padding-left: 0;
+    }
+
 }
 /*MOBILE*/
 @media (max-width: 425px) {
 
     .card{
         width: 100%;
+    }
+
+    .card a{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .carousel-inner .active{
+        height: 290px;
+    }
+
+    #sobre{
+        padding-top: 2rem;
+    }
+
+    #carrossel{
+        padding-bottom: .5rem;
     }
 
     #desc-sobre{
@@ -182,6 +225,24 @@ footer p{
         margin-top: 3rem;
     }
 
+    #contato button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #contato button, #cadastro button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cadastro button{
+        margin-top: 1rem;
+    }
+
+    .form-check{
+        padding-left: 0;
+    }
+
 }
 
 /*MOBILE 375*/
@@ -190,16 +251,63 @@ footer p{
         padding: 0 10px;
     }
 
+    .card a{
+        display: block;
+        margin: 0 auto;
+    }
+
     ul li{
         font-size: 0.9rem;
     }
+
+    .carousel-inner .active{
+        height: 260px;
+    }
+
+    #sobre{
+        padding-top: 2rem;
+    }
+
+    #carrossel{
+        padding-bottom: .5rem;
+    }
+
+    #contato button, #cadastro button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-check{
+        padding-left: 0;
+    }
+
+    #cadastro button{
+        margin-top: 1rem;
+    }
 }
 
-/*MOBILE MENOR*/
+/*MOBILE 320*/
 @media (max-width: 320px) {
 
     .card{
         width: 100%;
+    }
+
+    .card a{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .carousel-inner .active{
+        height: 200px;
+    }
+
+    #carrossel{
+        padding-bottom: .5rem;
+    }
+
+    #sobre{
+        padding-top: 2rem;
     }
 
     #desc-sobre{
@@ -225,6 +333,23 @@ footer p{
 
     ul li{
         font-size: 0.8rem;
+    }
+
+    #contato button, #cadastro button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #cadastro button{
+        margin-top: 1rem;
+    }
+
+    .form-check{
+        padding-left: 0;
+    }
+
+    .form-check label{
+        font-size: 0.9rem;
     }
 
 }
