@@ -137,11 +137,7 @@ footer p{
 
 
 /*TABLET*/
-@media (max-width: 768px) {
-    #img-contato{
-        margin-bottom: 2rem;
-        background-position-y: 0;
-    }
+@media (max-width: 768px){
 
     .card{
         width: 31%;
@@ -155,9 +151,6 @@ footer p{
         font-size: larger;
     }
 
-    .nav-link{
-        padding: 8px 12px;
-    }
     .div-logo{
         margin-top: 3rem;
     }
@@ -165,9 +158,6 @@ footer p{
 }
 /*MOBILE*/
 @media (max-width: 425px) {
-    #img-contato{
-        margin-bottom: 2rem;
-    }
 
     .card{
         width: 100%;
@@ -177,10 +167,12 @@ footer p{
         margin-bottom: 2rem;
     }
 
-    
+    .nav-link{
+        padding: 0 12px;
+    }
 
     ul li{
-        font-size: larger;
+        font-size: 1rem;
     }
 
     .nav{
@@ -192,12 +184,19 @@ footer p{
 
 }
 
+/*MOBILE 375*/
+@media (max-width: 375px){
+    .nav-link{
+        padding: 0 10px;
+    }
+
+    ul li{
+        font-size: 0.9rem;
+    }
+}
+
 /*MOBILE MENOR*/
 @media (max-width: 320px) {
-    #img-contato{
-        margin-bottom: 2rem;
-        background-position-y: 0;
-    }
 
     .card{
         width: 100%;
@@ -218,6 +217,14 @@ footer p{
     .nav{
         justify-content: center;
         font-size: small;
+    }
+
+    .nav-link{
+        padding: 0 8px;
+    }
+
+    ul li{
+        font-size: 0.8rem;
     }
 
 }
