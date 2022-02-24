@@ -1,8 +1,15 @@
+body {
+    color: #fff;
+    background-color: #1e1e2c;
+}
+
+
 .card{
     width: 32%;
     float: left;
     margin: 5px;
-    filter: drop-shadow(1px 1px 5px rgb(226, 226, 226));
+    filter: drop-shadow(1px 1px 5px #000);
+    background-color: #2d2d44;
 }
 
 section{
@@ -57,9 +64,31 @@ footer p{
 }
 
 #logo{
-    display: block;
-    margin: 0 auto;
+    font-size: 5rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    
 }
+
+#logo a{
+    text-decoration: none;
+    color: #33e1ed;
+    transition: 0.3s all;
+}
+#logo a:hover{
+    color: #31f1ff;
+    transition: 0.3s all;
+}
+
+.fa-star{
+    color: #2d2d44;
+    transition: 0.3s;
+}
+.fa-star:hover{
+    color: #fcd600;
+    transition: 0.3s;
+}
+
 
 #carrossel, .carousel{
     padding-top: .5rem;
@@ -68,6 +97,44 @@ footer p{
 .carousel-item{
     height: 450px;
 }
+
+#contato img{
+    display: block;
+    margin: 0 auto;
+}
+
+.text-success{
+    color: rgb(0, 184, 15) !important;
+    font-size: 2rem;
+}
+
+/*Dark mode*/
+.nav-link{
+    color: #33e1ed;
+}
+.nav-link:hover{
+    color: #1eb7c2;
+    transition: .4s all;
+}
+
+.form input, .form select, .form textarea{
+    background-color: #1e1e2c;
+    color: #fff;
+}
+.form input:focus, .form select:focus, .form textarea:focus{
+    background-color: #2d2d44;
+    color: #fff;
+}
+
+.modal-content{
+    background-color: #2d2d44;
+}
+.modal-content input{
+    background-color: #2d2d44;
+    color: #fff;
+}
+
+
 
 /*TABLET*/
 @media (max-width: 768px) {
@@ -90,6 +157,9 @@ footer p{
 
     .nav-link{
         padding: 8px 12px;
+    }
+    .div-logo{
+        margin-top: 3rem;
     }
 
 }
@@ -116,6 +186,9 @@ footer p{
     .nav{
         justify-content: center;
     }
+    .div-logo{
+        margin-top: 3rem;
+    }
 
 }
 
@@ -134,7 +207,13 @@ footer p{
         margin-bottom: 2rem;
     }
 
-   
+    .div-logo{
+        margin-top: 3rem;
+    }
+
+    #logo{
+        font-size: 4rem;
+    }
 
     .nav{
         justify-content: center;

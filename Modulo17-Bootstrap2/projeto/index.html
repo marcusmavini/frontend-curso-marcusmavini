@@ -10,28 +10,31 @@
     <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
     <!--Estilos para Cusotmização-->
     <link rel="stylesheet" href="./style/custom.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <title>Starshine</title>
 </head>
 <body>
     <header> <!--Cabeçalho da página-->
         <div class="col-md-12">
             <ul class="nav justify-content-end">
-                <li class="nav-itens"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#modal-login" >Login</a></li>
-                <li class="nav-itens"><a class="nav-link btn" href="cadastro.html">Cadastre-se</a></li>
+                <li class="nav-itens"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#modal-login"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                <li class="nav-itens"><a class="nav-link btn" href="cadastro.html"><i class="fa-solid fa-address-card"></i> Cadastre-se</a></li>
             </ul>
         </div>
         <div class="container">
-            <div class="row">
-                
-                <div class="col-12 justify-content-center">
-                    <img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"> <!--Imagem Logo-->
+            <div class="row">                
+                <div class="col-12 div-logo">
+                    <h1 id="logo"><a href="index.html">Starshine<i class="fa-solid fa-star fa-xs"></i></h1></a><!--<img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"></a>--> <!--Imagem Logo-->
                 </div>
                 <div class="col-12">                    
                     <ul class="nav justify-content-center"> <!--Menu de navegação superior-->
-                        <li class="nav-itens"><a class="nav-link actve" href="#">Home</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="#servicos">Serviços</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-itens"><a class="nav-link actve" href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#sobre"><i class="fa-solid fa-users"></i> Sobre</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#servicos"><i class="fa-solid fa-code"></i> Serviços</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,8 +89,8 @@
             <div class="row">
                 <div id="desc-sobre" class="col-md-12 col-sm-12">
                     <!--Descrição do Sobre nós-->
-                    <p class="fs-5">Nossa empresa tem o foco em desenvolver sites simples para todos. Totalmente funcionais e otimizados para a web e mobile.</p>
-                    <p class="fs-5">
+                    <p class="fs-4">Nossa empresa tem o foco em desenvolver sites simples para todos. Totalmente funcionais e otimizados para a web e mobile.</p>
+                    <p class="fs-4">
                         Nosso maior objetivo é trazer a sua ideia à vida! Você quer um site robusto, belo e funcional? Temos. Ou somente uma estrutura organizada e pronta para ser estilizada por você? Temos. Vejá agora nossos serviços para que você deixe a sua marca na internet!
                     </p>
                     <a href="#servicos" class="btn btn-primary">Ver Serviços</a>
@@ -172,7 +175,7 @@
             <div class="col-md-6 col-sm-12">
                 <h2>Contato</h2>
                 <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
-                <div id="img-contato"><!--<img src="./img/img-contato.jpg" id="pos-img-contato" class="img-fluid" alt="Uma pessoa mostrando um código para outra - Foto de olia danilevich no Pexels">--></div>
+                <img class="img-fluid" width="200" src="./img/shaking-hands.svg" alt="Aperto de Mãos"><!--<div id="img-contato"></div>   <img src="./img/img-contato.jpg" id="pos-img-contato" class="img-fluid" alt="Uma pessoa mostrando um código para outra - Foto de olia danilevich no Pexels">-->
             </div>
             <div class="col-md-6 col-sm-12"><!--Formuilário de contato-->
                 <form class="form needs-validation">
@@ -190,7 +193,7 @@
                         </textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-lg btn-success" >Solicitar Cotação</button>
+                    <button type="submit" class="btn btn-lg btn-primary" >Solicitar Cotação</button>
                 </form>
             </div>
         </div>
@@ -232,7 +235,7 @@
                 </ul>
             </div>
             <div class="modal-footer">
-                <div><p class="text-success">R$ 100,00</p></div>
+                <p class="text-success">R$ 100</p>
                 <button type="button" class="btn btn-success">Contratar</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
             </div>
@@ -266,7 +269,7 @@
                 </ul>
             </div>
             <div class="modal-footer">
-                <div><p class="text-success">R$ 180</p></div>
+                <p class="text-success">R$ 180</p>
                 <button type="button" class="btn btn-success">Contratar</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
             </div>
@@ -302,7 +305,7 @@
                 </ul>
             </div>
             <div class="modal-footer">
-                <div><p class="text-success">R$ 255</p></div>
+                <p class="text-success">R$ 255</p>
                 <button type="button" class="btn btn-success">Contratar</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver Outro</button>
             </div>
@@ -329,7 +332,7 @@
                     <div class="input-group has-validation">
                         <input type="password" class="form-control" aria-describedby="inputGroupPrepend" required name="login-senha" id="login-senha" placeholder="Senha" required>
                     </div>     
-                    <button type="submit" class="btn btn-success">Login</button>                    
+                    <button type="submit" class="btn btn-primary">Login</button>                    
                 </form>
                 <p>Não possui login? <a href="cadastro.html">Cadastre-se</a></p>       
             </div> 

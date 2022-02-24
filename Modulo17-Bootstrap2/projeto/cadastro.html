@@ -11,28 +11,32 @@
     <!--Estilos para Cusotmização-->
     <link rel="stylesheet" href="./style/custom.css">
     <link rel="stylesheet" href="./style/custom-form.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <title>Starshine - Cadastro</title>
 </head>
 <body>
     <header> <!--Cabeçalho da página-->
         <div class="col-md-12">
             <ul class="nav justify-content-end">
-                <li class="nav-itens"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#modal-login" >Login</a></li>
-                <li class="nav-itens"><a class="nav-link btn" href="cadastro.html">Cadastre-se</a></li>
+                <li class="nav-itens"><a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#modal-login" ><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                <li class="nav-itens"><a class="nav-link btn" href="cadastro.html"><i class="fa-solid fa-address-card"></i> Cadastre-se</a></li>
             </ul>
         </div>
         <div class="container">
             <div class="row">
                 
-                <div class="col-12 justify-content-center">
-                    <img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"> <!--Imagem Logo-->
+                <div class="col-12 div-logo">
+                    <h1 id="logo"><a href="index.html">Starshine<i class="fa-solid fa-star fa-xs"></i></h1></a><!--<img src="./img/starshine-logo-desktop.png" id="logo" class="img-fluid" alt="Logo da Empresa"></a>--> <!--Imagem Logo-->
                 </div>
                 <div class="col-12">                    
                     <ul class="nav justify-content-center"> <!--Menu de navegação superior-->
-                        <li class="nav-itens"><a class="nav-link actve" href="index.html">Home</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="index.html #sobre">Sobre</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="index.html #servicos">Serviços</a></li>
-                        <li class="nav-itens"><a class="nav-link" href="index.html #contato">Contato</a></li>
+                        <li class="nav-itens"><a class="nav-link actve" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="index.html #sobre"><i class="fa-solid fa-users"></i> Sobre</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="index.html #servicos"><i class="fa-solid fa-code"></i> Serviços</a></li>
+                        <li class="nav-itens"><a class="nav-link" href="index.html #contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,17 +56,13 @@
                 
                 <form class="form form-row needs-validation" onsubmit="confirmacaoSenha(this); return false;"><!--Formuilário de cadastro-->                
                     <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="input-group has-validation">
-                                <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                            </div>
+                        <div class="col-md-6 col-sm-12">                            
+                            <label for="nome">Nome</label><br>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <div class="input-group has-validation">
-                                <label for="email">E-mail</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu E-mail" required>
-                            </div>
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu E-mail" required>
                         </div>
                     </div>                    
                     
@@ -148,7 +148,7 @@
                         </div>
                     </div>                  
                     
-                    <button type="submit" class="btn btn-lg btn-success" >Finalizar Cadastro</button>
+                    <button type="submit" class="btn btn-lg btn-primary" >Finalizar Cadastro</button>
                 </form>
                 
                 <!--<p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades</p>-->
@@ -186,7 +186,7 @@
                     <div class="input-group has-validation">
                         <input type="password" class="form-control" aria-describedby="inputGroupPrepend" required name="login-senha" id="login-senha" placeholder="Senha" required>
                     </div>     
-                    <button type="submit" class="btn btn-success">Login</button>                    
+                    <button type="submit" class="btn btn-primary">Login</button>                    
                 </form>
                 <p>Não possui login? <a href="cadastro.html">Cadastre-se</a></p>       
             </div> 
@@ -201,8 +201,6 @@
         <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!--Script do Font Awesome-->
         <script src="./libs/fontawesome/js/all.min.js"></script>
-        <!--Custom JS-->
-        <script src="./js/custom.js"></script>
         <!--<script src="https://kit.fontawesome.com/d7d6e85a38.js" crossorigin="anonymous"></script>-->
     </body>
     </html>
