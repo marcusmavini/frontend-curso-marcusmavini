@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: linear-gradient(#170e61, #0f093f);
+  padding: 10px;
+  color: #fff;
+}
+/*=====NAV====*/
+.menu {
+  width: 100%;
+  height: 100px;
+  text-align: end;
+  padding-right: 50px;
+}
+
+li {
+  display: inline-block;
+  margin: 5px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #6857dd;
+  border-radius: 10px;
+  border: 2px solid #6857dd;
+  background: none;
+  padding: 10px;
+  font-weight: 600;
+}
+.menu li a:hover {
+  color: #b8b5ff;
+  background-color: #6857dd;
+  transition: all 0.3s ease;
+}
+/*=====NAV====*/
+
+/*=====INTRO====*/
+.intro {
+  display: flex;
+  justify-content: center;
+}
+/*=====FORM====*/
+.intro-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 70%;
+  padding: 20px;
+  color: #000;
+  font-size: 2rem;
+  border-radius: 15px;
+  border-style: none;
+  margin-bottom: 9px;
+}
+
+form .btn-intro {
+  width: 20%;
+  height: 40px;
+  pad: 20px;
+  font-weight: 400;
+  font-size: larger;
+  border-radius: 15px;
+  border-style: none;
+}
+
+/*=====FORM====*/
+
+.intro-glass {
+  /*background-image: url(./img/CronogramaLogica.png);
+  background-size: cover;*/
+  width: 100%;
+  height: 50vh;
+  background: #3b186c;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 25px;
+}
+
+/*=====INTRO====*/
+
+section {
+  padding: 20px;
+}

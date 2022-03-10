@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  background-color: rgb(246, 241, 164);
+}
+h1 {
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  margin-left: 35px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #3b186c;
+}
+h4 {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+section {
+  padding: 5.8em 2em 0;
+}
+.title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+.title.title-right {
+  justify-content: flex-end;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: #0f093f;
+  transition: all 0.3s ease-in;
+  border-radius: 15px;
+  border-style: none;
+  margin-top: 80vh;
+  color: #fff;
+  font-size: 1.8rem;
+  filter: drop-shadow(1px 1px 5px rgb(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6857dd;
+}
+
+.wrapper {
+  display: flex;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  background-color: #3b186c;
+  width: 100%;
+  height: 97%;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.22);
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 1em 0 0;
+}
+
+.social-menu {
+  display: none;
+}
+
+.menu li {
+  margin-top: 0;
+}
+
+a.nav-link {
+  margin-right: 3em;
+}
+a.nav-link:hover {
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+/* intro */
+
+.intro {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: end;
+  /* background: rbg(248, 241, 134) right bottom;*/
+  background-image: url(./img/CronogramaLogica.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 1rem;
+  -webkit-filter: drop-shadow(1px 1px 6px rgb(68, 68, 68));
+  filter: drop-shadow(1px 1px 6px rgb(68, 68, 68));
+}
+
+#form-intro {
+  display: flex;
+  flex-direction: column;
+}
+.inscrevase-intro {
+  width: 400px;
+  margin-top: 50vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+#form-intro input {
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 20px;
+  border-style: none;
+  -webkit-filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.4));
+}
+
+#form-intro button {
+  width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #0f093f;
+  border-radius: 15px;
+  border-style: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+#form-intro button:hover {
+  background-color: #6857dd;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.h2-intro {
+  color: #fff;
+  text-align: center;
+}
+
+/* sobre */
+
+#sobre .image img {
+  margin-left: 300;
+  width: 400px;
+}
+
+.text {
+  text-align: center;
+  padding: 1em;
+}
+
+.text p {
+  text-align: justify;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+  color: #0f093f;
+}
+
+#sobre {
+  background-color: #fff;
+  color: #000;
+}
+
+section#sobre {
+  padding-bottom: 5.8em;
+}
+
+#sobre .text {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 2em;
+  flex: 1;
+  order: 1;
+}
+
+#sobre .text p {
+  padding-bottom: 0;
+  text-align: left;
+}
+
+#sobre .image {
+  flex: 1 0 12em;
+  order: 2;
+}
+
+#sobre .text {
+  flex: 1;
+  order: 1;
+}
+
+.text {
+  text-align: left;
+  margin: 0 0 auto 4em;
+}
+
+#form-sobre {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-sobre input {
+  padding: 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border-style: none;
+  -webkit-filter: drop-shadow(1px 1px 5px #ccc);
+  filter: drop-shadow(1px 1px 5px #ccc);
+}
+
+#form-sobre button {
+  width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #0f093f;
+  border-radius: 15px;
+  border-style: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#form-sobre button:hover {
+  background-color: #6857dd;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Contato */
+footer {
+  background-color: #3b186c;
+}
+
+section#contact {
+  padding: 3em 2em 0.5em;
+}
+
+.contact-wrapper:after {
+  display: block;
+  content: "";
+  margin: 2em 0;
+}
+
+.contact-wrapper .wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.contact-wrapper .social-menu {
+  flex: 1 0 100%;
+  justify-content: left;
+}
+
+.contact-wrapper .social-menu li a {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0 1.5em 0 0;
+}
+
+.contact-wrapper a i {
+  width: 100%;
+  padding-bottom: 0.2em;
+}
+.contact-footer {
+  border: 1px solid #000;
+  border: 0;
+  padding: 0;
+  margin: 0.6em 0;
+  text-align: left;
+}
+
+.contact-footer:last-child {
+  border-left: 0;
+}
+
+.contact-tel {
+  flex: 1 0 50%;
+}
+
+.contact-email {
+  flex: 1 0 50%;
+}
+.contact-insta {
+  flex: 1 0 50%;
+}
+
+.copy-wrapper a {
+  font-weight: 700;
+  flex: 1 0 100%;
+  padding: 0 1em;
+}
+
+.form-wrapper,
+.contact-wrapper {
+  flex: 1 0 50%;
+  align-self: left;
+  padding: 0 1em;
+}
+
+small p {
+  text-align: center;
+}
