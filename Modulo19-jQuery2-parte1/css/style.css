@@ -723,3 +723,12 @@ a {
     text-align: left;
   }
 }
+
+.invalid{
+  border-color: #f00;
+  color: red;
+}
+
+.text-muted{
+  display: none;
+}
