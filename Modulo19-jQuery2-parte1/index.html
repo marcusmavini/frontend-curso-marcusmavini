@@ -11,13 +11,13 @@
 
     <!--Style Custom-->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>jQuery</title>
+    <title>H. Moon</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/images/header-logo.png" alt="" />
+          <h1 class="titulo-logo">H. Moon</h1><!--<img src="assets/images/header-logo.png" alt="" />-->
         </a>
         <button
           class="navbar-toggler"
@@ -30,6 +30,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -39,13 +40,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Produtos</a>
+              <a class="nav-link" href="#featured">Produtos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
+              <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
+              <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -57,9 +58,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="caption">
-              <h2>Ecommerce HTML Template</h2>
+              <h2>Coleção Primavera Verão</h2>
               <div class="line-dec"></div>
-              <p>HTML Template can be converted into your desired CMS theme.</p>
+              <p>Com estampas vibrantes para deixar o seu verão fresquinho!! Já disponível.</p>
             </div>
           </div>
         </div>
@@ -77,58 +78,58 @@
           </div>
           <div class="col-md-12">
             <div class="owl-carousel owl-theme">
-              <div class="featured-item">
-                <img src="assets/images/item-01.jpg" alt="Item 1" />
-                <h4>Produto 1</h4>
-                <h6>R$ 20,00</h6>
-                <a href="single-product.html"> Comprar </a>
+              <div class="featured-item" id="produto1">
+                <img src="assets/images/item-01.webp" class="img-fluid" alt="Item 1" />
+                <h4>Vestido Florido</h4>
+                <h6>R$ 79,90</h6>
+                <a href="#produto1" class="nav-modal-open" rel="produto1"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-02.jpg" alt="Item 2" />
-                <h4>Produto 2</h4>
-                <h6>R$ 20,00</h6>
+                <h4>Macaquinho Roxo</h4>
+                <h6>R$ 54,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-03.jpg" alt="Item 3" />
-                <h4>Produto 3</h4>
-                <h6>R$ 20,00</h6>
+                <h4>Vestido Corações</h4>
+                <h6>R$ 79,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-04.jpg" alt="Item 4" />
-                <h4>Produto 4</h4>
-                <h6>R$ 20,00</h6>
-                <a href="single-product.html"> Comprar </a>
+                <h4>Vestido Listras Paraíso</h4>
+                <h6>R$ 59,90</h6>
+                <a href="single-product.html" rel="produto"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-05.jpg" alt="Item 5" />
-                <h4>Produto 5</h4>
-                <h6>R$ 20,00</h6>
+                <h4>Saia Listras</h4>
+                <h6>R$ 49,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-06.jpg" alt="Item 6" />
-                <h4>Produto 6</h4>
-                <h6>R$ 20,00</h6>
+                <h4>Vestido Cordel</h4>
+                <h6>R$ 67,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
               <div class="featured-item">
-                <img src="assets/images/item-04.jpg" alt="Item 7" />
-                <h4>Produto 7</h4>
-                <h6>R$ 20,00</h6>
+                <img src="assets/images/item-07.jpg" alt="Item 7" />
+                <h4>Blusa Fresca Branca</h4>
+                <h6>R$ 59,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
               <div class="featured-item">
-                <img src="assets/images/item-05.jpg" alt="Item 8" />
-                <h4>Produto 8</h4>
-                <h6>R$ 20,00</h6>
+                <img src="assets/images/item-08.webp" alt="Item 8" />
+                <h4>Vestido Flora Aqua</h4>
+                <h6>R$ 64,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
               <div class="featured-item">
-                <img src="assets/images/item-06.jpg" alt="Item 9" />
-                <h4>Produto 9</h4>
-                <h6>R$ 20,00</h6>
+                <img src="assets/images/item-09.jpg" alt="Item 9" />
+                <h4>Vestido Roxo</h4>
+                <h6>R$ 79,90</h6>
                 <a href="single-product.html"> Comprar </a>
               </div>
             </div>
@@ -159,7 +160,7 @@
                       <fieldset>
                         <input
                           name="email"
-                          type="text"
+                          type="email"
                           class="form-control"
                           id="email"
                           value=""
@@ -187,35 +188,36 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="logo">
-              <img src="assets/images/header-logo.png" alt="" />
-            </div>
+            <a class="navbar-brand" href="#">
+              <h1 class="titulo-logo">H. Moon</h1><!--<img src="assets/images/header-logo.png" alt="" />-->
+            </a>
           </div>
           <div class="col-md-12">
             <div class="footer-menu">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">How It Works ?</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre" class="nav-modal-open" rel="sobre">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#contato" class="nav-modal-open" rel="contato">Contato</a></li>
               </ul>
             </div>
+          </div>
+          <div class="col-md-12">
+            <div id="endereco-footer">
+              <p>Estr. de Jacarepaguá, 7744 - Freguesia de Jacarepaguá, Rio de Janeiro - RJ, 22755-158</p>
+            </div>            
           </div>
           <div class="col-md-12">
             <div class="social-icons">
               <ul>
                 <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=5521%2097262-0508" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/h.moonoficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-rss"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
               </ul>
             </div>
@@ -229,7 +231,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright-text">
-              <p>WebStore &copy; Todos os direitos reservados</p>
+              <p>H. Moon &copy; Todos os direitos reservados</p>
             </div>
           </div>
         </div>
@@ -245,13 +247,25 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Body
+            
           </div>
         </div>
       </div>
     </div>
-    
+
     <div id="contato" class="visually-hidden">
+      <div id="wpp">
+        <p>Chame no Whatsapp:</p>
+        <a href="https://api.whatsapp.com/send?phone=5521%2097262-0508" target="_blank"><strong><i class="fa-brands fa-whatsapp"></i>(21)97262-0508</strong></a>
+      </div>
+      <div id="cont-endereco">
+        <p>Ou então nos faça uma visita: </p>
+        <a href="https://goo.gl/maps/ZFh1Xid2MowYR6r9A" target="_blank"><strong><i class="fa-solid fa-location-dot"></i>Estr. de Jacarepaguá, 7744 - Freguesia de Jacarepaguá, Rio de Janeiro - RJ, 22755-158</strong></a>
+      </div>
+      
+    </div>
+    
+    <div id="cadastro" class="visually-hidden">
       <form action="post" class="form">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome</label>
@@ -266,40 +280,51 @@
         </div>
         
         <div class="mb-3">
-          <label for="date" class="form-label">Data</label>
+          <label for="date" class="form-label">Data de Nascimento</label>
           <input type="text" name="date" id="date" class="form-control" placeholder="Digite a Data" aria-describedby="helpDate">
           <small id="helpDate" class="text-muted">Digite uma data válida</small>
         </div>
 
         <div class="mb-3">
-          <label for="time" class="form-label">Hora</label>
-          <input type="time" name="time" id="time" class="form-control" placeholder="Digite a Hora" aria-describedby="helpTime">
-          <small id="helpTime" class="text-muted">Digite uma hora válida</small>
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu Celular" aria-describedby="helpcpf">
+          <small id="helpcpf" class="text-muted">Digite um CPF válido</small>
+        </div>
+        
+        <div class="mb-3">
+          <label for="endereco" class="form-label">Endereço</label>
+          <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite seu endereço" aria-describedby="helpendereco">
+          <small id="helpendereco" class="text-muted">Digite um endereço válido</small>
         </div>
 
+        <div class="mb-3">
+          <label for="enderecoNumero" class="form-label">Nº</label>
+          <input type="text" name="enderecoNumero" id="enderecoNumero" class="form-control" placeholder="Digite seu endereço" aria-describedby="helpEnderecoNum">
+          <small id="helpEnderecoNum" class="text-muted">Digite um endereço válido</small>
+        </div>        
+        
         <div class="mb-3">
           <label for="cep" class="form-label">CEP</label>
           <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCep">
           <small id="helpCep" class="text-muted">Digite um CEP válido</small>
         </div>
+
         <div class="mb-3">
           <label for="phone" class="form-label">Celular</label>
-          <input type="tel" name="phone" id="phone" class="form-control" placeholder="Digite seu Celular" aria-describedby="helpPhone">
+          <input type="tel" name="phone" id="phone" class="form-control" placeholder="Digite seu celular" aria-describedby="helpPhone">
           <small id="helpPhone" class="text-muted">Digite um celular válido</small>
-        </div>
-        <div class="mb-3">
-          <label for="cpf" class="form-label">CPF</label>
-          <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu Celular" aria-describedby="helpcpf">
-          <small id="helpcpf" class="text-muted">Digite um CPF válido</small>
-        </div>
+        </div>        
 
         <button type="submit" class="btn btn-primary">Cadastrar</button>
       </form>
     </div>
 
     <div id="sobre" class="visually-hidden">
+      <video id="video-sobre" class="img-fluid" src="./assets/videos/hmoon-boomerang.mp4" autoplay loop></video>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim repellendus obcaecati quisquam. Ex non, id rerum quia aspernatur labore eos fugiat asperiores harum quod dolorem provident assumenda ut ratione.</p>
     </div>
+
+    
 
     <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>

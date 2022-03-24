@@ -13,18 +13,18 @@ $(document).ready(function () {
     '<span class="badge bg-secondary">Novo</span>'
   );
 
-  $(".featured-item h4").click(function () {
+  /*$(".featured-item h4").click(function () {
     $(this).css({
       color: "#f00",
       background: "#00f",
     });
-  });
+  });*/
 
   /* CALLBACK
   |*
   |*/
 
-  $(".featured-item:nth(1)")
+  /*$(".featured-item:nth(1)")
     .hide(500, function () {
       console.log($(this).find("h4").text() + " Esgotado");
     })
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
   /*$('.featured-item:nth(0)').hide()*/
 
-  $("#form-submit").on("click", function (e) {
+  /*$("#form-submit").on("click", function (e) {
     e.preventDefault();
     if ($("#email").val() != "") {
       $("#email").animate(
@@ -51,7 +51,10 @@ $(document).ready(function () {
         }
       );
     }
-  });
+  });*/
+
+
+
 
   /*Ouvinte de eventos .nav-modal-open*/
   $('.nav-modal-open').on('click', function(e){
@@ -61,11 +64,15 @@ $(document).ready(function () {
 
     $('.modal-body').html($('#'+ elem).html());
     $('.modal-header h5.modal-title').html($(this).text());
+    $('.modal-footer').html($(this).text());
 
     let myModal = new bootstrap.Modal($('#modelId'));
 
     myModal.show();
   })
+  //MODAL DE PRODUTOS
+
+  //VALIDAÇÃO
 
   function validate(elem){
     if(elem.val() == ''){

@@ -17,7 +17,7 @@ a {
 }
 
 .main-button a {
-  background-color: #3a8bcd;
+  background-color: rgb(255, 128, 179);
   border-radius: 5px;
   padding: 10px 15px;
   display: inline-block;
@@ -39,7 +39,7 @@ a {
 .section-heading .line-dec {
   width: 30px;
   height: 5px;
-  background-color: #3a8bcd;
+  background-color: rgb(255, 128, 179);
 }
 .section-heading h1 {
   font-size: 22px;
@@ -50,7 +50,7 @@ a {
 
 /* Pre Header Style */
 #pre-header {
-  background-color: #3a8bcd;
+  background-color: rgb(255, 128, 179);
   text-align: center;
 }
 #pre-header span {
@@ -93,7 +93,7 @@ a {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show > .nav-link {
-  color: #3a8bcd;
+  color: rgb(255, 128, 179);
 }
 .navbar:after {
   width: 100%;
@@ -108,8 +108,8 @@ a {
   background-image: none;
 }
 .navbar-dark .navbar-toggler {
-  border-color: #3a8bcd;
-  background-color: #3a8bcd;
+  border-color: rgb(255, 128, 179);
+  background-color: rgb(255, 128, 179);
   height: 50px;
   outline: none;
 }
@@ -144,7 +144,7 @@ a {
 .banner .caption .line-dec {
   width: 30px;
   height: 5px;
-  background-color: #3a8bcd;
+  background-color: rgb(255, 128, 179);
 }
 .banner .caption p {
   margin-top: 15px;
@@ -175,10 +175,10 @@ a {
   transition: all 0.5s;
 }
 .featured-item:hover h4 {
-  color: #3a8bcd;
+  color: rgb(255, 128, 179);
 }
 .featured-item h6 {
-  color: #3a8bcd;
+  color: #000;
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 0px;
@@ -191,7 +191,7 @@ a {
   outline: none;
 }
 .owl-theme .owl-dots .active span {
-  background-color: #3a8bcd !important;
+  background-color: rgb(255, 128, 179) !important;
 }
 .owl-theme .owl-dots .owl-dot span {
   background-color: #aaa;
@@ -204,9 +204,10 @@ a {
 
 /* Subscribe Style */
 .subscribe-form {
-  background-color: #3a8bcd;
+  background-color: rgb(202, 79, 128);
   padding: 80px 0px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .subscribe-form .section-heading {
   margin-top: 0px;
@@ -251,7 +252,7 @@ a {
   border-radius: 5px;
   padding: 10px 15px;
   display: inline-block;
-  color: #3a8bcd;
+  color: rgb(255, 128, 179);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 300;
@@ -281,6 +282,7 @@ a {
 }
 .footer .footer-menu {
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 .footer .footer-menu ul li {
   margin: 0px 15px;
@@ -292,7 +294,7 @@ a {
   transition: all 0.5s;
 }
 .footer .footer-menu a:hover {
-  color: #3a8bcd;
+  color: rgb(255, 128, 179);
   text-decoration: none;
 }
 .footer .social-icons {
@@ -314,7 +316,7 @@ a {
   transition: all 0.5s;
 }
 .footer .social-icons a:hover {
-  background-color: #3a8bcd;
+  background-color: rgb(255, 128, 179);
 }
 
 /* Sub Footer Style */
@@ -328,7 +330,7 @@ a {
   line-height: 60px;
 }
 .sub-footer a {
-  color: #3a8bcd;
+  color: rgb(255, 179, 179);
   text-decoration: none;
 }
 
@@ -659,6 +661,57 @@ a {
   border: none;
 }
 
+.titulo-logo{
+  color: rgb(202, 79, 128);
+  font-size: 3rem;
+  border: 2px solid rgb(202, 79, 128);
+  width: 200px;
+  margin: 0 auto;
+  transition: .3s all;
+}
+
+.titulo-logo:hover{
+  color: rgb(255, 202, 202);
+  background-color: rgb(202, 79, 128);
+  transition: .3s all;
+}
+#wpp{
+  margin: 5px 0 20px 0;
+}
+#wpp a strong{
+  color: #25d366;
+  transition: 0.3s all;
+}
+#wpp a strong:hover{
+  color: #1ebb57;
+  transition: 0.3s all;
+}
+
+#cont-endereco{
+  margin: 5px 0 20px 0;
+}
+#cont-endereco a strong{
+  color: #000;
+  transition: 0.3s all;
+}
+#cont-endereco a strong:hover{
+  color: rgb(224, 0, 0);
+  transition: 0.3s all;
+}
+
+#video-sobre{
+  width: 200px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+#sobre p{
+  display: block;
+  float: left;
+}
+
 /* Responsive Style */
 @media (max-width: 991px) {
   .banner {
@@ -722,13 +775,26 @@ a {
     margin-top: 15px;
     text-align: left;
   }
+  .owl-carousel .featured-item{
+    width: 100%;
+  }
+
 }
 
-.invalid{
-  border-color: #f00;
-  color: red;
-}
 
-.text-muted{
-  display: none;
+@media (max-width: 425px){
+ 
 }
+  .invalid{
+    border-color: #f00;
+    color: red;
+  }
+
+  .text-muted{
+    display: none;
+  }
+
+  #endereco-footer p{
+    margin-bottom: 20px;
+    color: #7a7a7a;
+  }
