@@ -668,6 +668,7 @@ a {
   width: 200px;
   margin: 0 auto;
   transition: .3s all;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .titulo-logo:hover{
@@ -711,6 +712,59 @@ a {
   display: block;
   float: left;
 }
+
+.btn-light{
+  background-color: rgb(255, 228, 228) !important;
+}
+
+.btn-cadastro .container-cadastro{
+  position: fixed;
+  z-index: 1000;
+  width: 100px;
+  color: #f00;
+  padding: 10px;
+  bottom: 20px;
+  right: 30px;
+  text-align: center;
+}
+
+#cadastro{
+  width: 350px;
+  height: 400px;
+  z-index: 1000;
+  bottom: 100px;
+  right: 50px;
+  position: fixed;
+  border-radius: 10px;
+  overflow: scroll;
+  background-color: #fff;
+  filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
+  -webkit-filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
+  padding: 5px;
+}
+
+#cadastro::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+#cadastro::-webkit-scrollbar-track {
+  color: white;      /* color of the tracking area */
+}
+
+#cadastro::-webkit-scrollbar-thumb {
+  background-color: rgb(202, 79, 128);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+#btn-cadastrar{
+  background-color: rgb(202, 79, 128);
+  border: none;
+}
+#btn-cadastrar:hover{
+  background-color: rgb(175, 67, 110);
+}
+
 
 /* Responsive Style */
 @media (max-width: 991px) {
@@ -765,6 +819,7 @@ a {
   .contact-page {
     margin-top: 0px;
   }
+  
 }
 
 @media (max-width: 767px) {
@@ -778,23 +833,51 @@ a {
   .owl-carousel .featured-item{
     width: 100%;
   }
-
+  
 }
 
 
 @media (max-width: 425px){
- 
+  .btn-cadastro .container-cadastro{
+    bottom: 10px;
+    right: 5px;
+  }
+  #cadastro{
+    bottom: 80px;
+  }
+
+  .featured-item{
+    height: 270px;
+  }
+  
+  .featured-item h3{
+    font-size: large;
+  }
 }
-  .invalid{
-    border-color: #f00;
-    color: red;
-  }
 
-  .text-muted{
-    display: none;
+@media (max-width: 375px){
+  #cadastro{
+    width: 300px;
+    bottom: 80px;
   }
+}
+@media (max-width: 320px){
+  #cadastro{
+    width: 250px;
+    bottom: 80px;
+  }
+}
 
-  #endereco-footer p{
-    margin-bottom: 20px;
-    color: #7a7a7a;
-  }
+.invalid{
+  border-color: #f00;
+  color: red;
+}
+
+.text-muted{
+  display: none;
+}
+
+#endereco-footer p{
+  margin-bottom: 20px;
+  color: #7a7a7a;
+}

@@ -8,12 +8,76 @@
     <link rel="stylesheet" href="./vendor/owl/css/owl.css" />
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./vendor/jquery-ui-1.13.1.custom/jquery-ui.min.css">
+  
+
+    <!--Font Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
     <!--Style Custom-->
     <link rel="stylesheet" href="./css/style.css" />
     <title>H. Moon</title>
   </head>
   <body>
+    <div class="toggler">
+      <div id="cadastro" class="visually-hidden">
+        <form class="form">
+          <h4>Cadastre-se</h4>
+          <small><p>Receba nossos produtos em sua casa</p></small>
+          <div class="mb-3">
+            <!--<label for="nome" class="form-label">Nome</label>-->
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" aria-describedby="helpNome">
+            <small id="helpNome" class="text-muted">Digite um nome válido</small>
+          </div>
+          
+          <div class="mb-3">
+            <!-- <label for="email" class="form-label">E-mail</label> -->
+            <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" aria-describedby="helpEmail">
+            <small id="helpEmail" class="text-muted">Digite um E-mail válido</small>
+          </div>
+          
+          <div class="mb-3">
+            <!-- <label for="date" class="form-label">Data de Nascimento</label> -->
+            <input type="text" name="date" id="date" class="form-control" placeholder="Data de Nascimento" aria-describedby="helpDate">
+            <small id="helpDate" class="text-muted">Digite uma data válida</small>
+          </div>
+  
+          <div class="mb-3">
+            <!-- <label for="cpf" class="form-label">CPF</label> -->
+            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF" aria-describedby="helpcpf">
+            <small id="helpcpf" class="text-muted">Digite um CPF válido</small>
+          </div>
+          
+          <div class="mb-3">
+            <!-- <label for="endereco" class="form-label">Endereço</label> -->
+            <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Endereço Completo" aria-describedby="helpendereco">
+            <small id="helpendereco" class="text-muted">Digite um endereço válido</small>
+          </div>        
+          
+          <div class="mb-3">
+            <!-- <label for="cep" class="form-label">CEP</label> -->
+            <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" aria-describedby="helpCep">
+            <small id="helpCep" class="text-muted">Digite um CEP válido</small>
+          </div>
+  
+          <div class="mb-3">
+            <!-- <label for="phone" class="form-label">Celular</label> -->
+            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Celular" aria-describedby="helpPhone">
+            <small id="helpPhone" class="text-muted">Digite um celular válido</small>
+          </div>        
+  
+          <button type="submit" class="btn btn-primary" id="btn-cadastrar">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="btn-cadastro">
+      <div class="container-cadastro">       
+          <a href="#cadastro" class="btn btn-lg btn-success" ><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -67,6 +131,7 @@
       </div>
     </div>
 
+
     <div id="featured" class="featured-items">
       <div class="container">
         <div class="row">
@@ -77,60 +142,42 @@
             </div>
           </div>
           <div class="col-md-12">
-            <div class="owl-carousel owl-theme">
-              <div class="featured-item" id="produto1">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="featured-item">
                 <img src="assets/images/item-01.webp" class="img-fluid" alt="Item 1" />
-                <h4>Vestido Florido</h4>
-                <h6>R$ 79,90</h6>
-                <a href="#produto1" class="nav-modal-open" rel="produto1"> Comprar </a>
+                <h3>Vestido Florido</h3>
+                <h5>R$ 79,90</h5>
+                <a href="#" class="btn btn-light stretched-link"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-02.jpg" alt="Item 2" />
-                <h4>Macaquinho Roxo</h4>
-                <h6>R$ 54,90</h6>
-                <a href="single-product.html"> Comprar </a>
+                <h3>Macaquinho Roxo</h3>
+                <h5>R$ 54,90</h5>
+                <a href="#" class="btn btn-light stretched-link"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-03.jpg" alt="Item 3" />
-                <h4>Vestido Corações</h4>
-                <h6>R$ 79,90</h6>
-                <a href="single-product.html"> Comprar </a>
+                <h3>Vestido Corações</h3>
+                <h5>R$ 79,90</h5>
+                <a href="#" class="btn btn-light stretched-link"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-04.jpg" alt="Item 4" />
-                <h4>Vestido Listras Paraíso</h4>
-                <h6>R$ 59,90</h6>
-                <a href="single-product.html" rel="produto"> Comprar </a>
+                <h3>Vestido Listras</h3>
+                <h5>R$ 59,90</h5>
+                <a href="#" class="btn btn-light stretched-link"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-05.jpg" alt="Item 5" />
-                <h4>Saia Listras</h4>
-                <h6>R$ 49,90</h6>
-                <a href="single-product.html"> Comprar </a>
+                <h3>Saia Listras</h3>
+                <h5>R$ 49,90</h5>
+                <a href="#" class="btn btn-light stretched-link"> Comprar </a>
               </div>
               <div class="featured-item">
                 <img src="assets/images/item-06.jpg" alt="Item 6" />
-                <h4>Vestido Cordel</h4>
-                <h6>R$ 67,90</h6>
-                <a href="single-product.html"> Comprar </a>
-              </div>
-              <div class="featured-item">
-                <img src="assets/images/item-07.jpg" alt="Item 7" />
-                <h4>Blusa Fresca Branca</h4>
-                <h6>R$ 59,90</h6>
-                <a href="single-product.html"> Comprar </a>
-              </div>
-              <div class="featured-item">
-                <img src="assets/images/item-08.webp" alt="Item 8" />
-                <h4>Vestido Flora Aqua</h4>
-                <h6>R$ 64,90</h6>
-                <a href="single-product.html"> Comprar </a>
-              </div>
-              <div class="featured-item">
-                <img src="assets/images/item-09.jpg" alt="Item 9" />
-                <h4>Vestido Roxo</h4>
-                <h6>R$ 79,90</h6>
-                <a href="single-product.html"> Comprar </a>
+                <h3>Vestido Cordel</h3>
+                <h5>R$ 67,90</h5>
+                <a href="#" class="btn btn-light stretched-link"> Comprar </a>
               </div>
             </div>
           </div>
@@ -150,7 +197,7 @@
           <div class="col-md-8 offset-md-2">
             <div class="main-content">
               <p>
-                Insira seus dados abaixo para receber informações atualizadas de
+                Insira seu E-mail abaixo para receber informações atualizadas de
                 nossos produtos
               </p>
               <div class="container">
@@ -265,59 +312,7 @@
       
     </div>
     
-    <div id="cadastro" class="visually-hidden">
-      <form action="post" class="form">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
-          <small id="helpNome" class="text-muted">Digite um nome válido</small>
-        </div>
-        
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu E-mail" aria-describedby="helpEmail">
-          <small id="helpEmail" class="text-muted">Digite um E-mail válido</small>
-        </div>
-        
-        <div class="mb-3">
-          <label for="date" class="form-label">Data de Nascimento</label>
-          <input type="text" name="date" id="date" class="form-control" placeholder="Digite a Data" aria-describedby="helpDate">
-          <small id="helpDate" class="text-muted">Digite uma data válida</small>
-        </div>
-
-        <div class="mb-3">
-          <label for="cpf" class="form-label">CPF</label>
-          <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu Celular" aria-describedby="helpcpf">
-          <small id="helpcpf" class="text-muted">Digite um CPF válido</small>
-        </div>
-        
-        <div class="mb-3">
-          <label for="endereco" class="form-label">Endereço</label>
-          <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite seu endereço" aria-describedby="helpendereco">
-          <small id="helpendereco" class="text-muted">Digite um endereço válido</small>
-        </div>
-
-        <div class="mb-3">
-          <label for="enderecoNumero" class="form-label">Nº</label>
-          <input type="text" name="enderecoNumero" id="enderecoNumero" class="form-control" placeholder="Digite seu endereço" aria-describedby="helpEnderecoNum">
-          <small id="helpEnderecoNum" class="text-muted">Digite um endereço válido</small>
-        </div>        
-        
-        <div class="mb-3">
-          <label for="cep" class="form-label">CEP</label>
-          <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCep">
-          <small id="helpCep" class="text-muted">Digite um CEP válido</small>
-        </div>
-
-        <div class="mb-3">
-          <label for="phone" class="form-label">Celular</label>
-          <input type="tel" name="phone" id="phone" class="form-control" placeholder="Digite seu celular" aria-describedby="helpPhone">
-          <small id="helpPhone" class="text-muted">Digite um celular válido</small>
-        </div>        
-
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
-      </form>
-    </div>
+    
 
     <div id="sobre" class="visually-hidden">
       <video id="video-sobre" class="img-fluid" src="./assets/videos/hmoon-boomerang.mp4" autoplay loop></video>
@@ -332,6 +327,7 @@
     <script src="./vendor/fontawesome/js/all.min.js"></script>
     <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
     <script src="./vendor/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+    
     <script src="./js/custom.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@ $(document).ready(function () {
   $("#featured"); //Id
 
   // Configuração de produtos
-  $(".featured-item a").addClass("btn btn-dark stretch-link");
+  /*$(".featured-item a").addClass("btn btn-dark stretch-link");
 
   $(".featured-item:first h4").append(
     '<span class="badge bg-secondary">Novo</span>'
@@ -52,6 +52,18 @@ $(document).ready(function () {
       );
     }
   });*/
+
+$('.btn-lg').on('click', function(e){
+  e.preventDefault();
+  const cadastro = $('#cadastro');
+
+  if(cadastro.hasClass('visually-hidden')){
+    $(cadastro).removeClass('visually-hidden');
+  }else{
+    $(cadastro).addClass('visually-hidden');
+  }
+  
+});
 
 
 
@@ -141,5 +153,4 @@ $('body').on('focus', '#date', function(){
     $('#cpf').mask('000.000.000-00', {reverse: true});
   }) 
   
-
 });
