@@ -19,8 +19,28 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>H. Moon</title>
   </head>
-  <body>
-    <div class="toggler">
+  <body>    
+    <div id="contato" class="visually-hidden">
+      <h3>Contato</h3>
+      <div class="enviar-mensagem">
+        <form id="contato-form">
+          <input type="text" class="input-group" id="contato-nome" name="contato-nome" placeholder="Nome" required>
+          <input type="email" id="contato-email" name="contato-email" placeholder="E-Mail" required>
+          <textarea name="contato-mensagem" id="contato-mensagem" cols="25" rows="4" required placeholder="Escreva sua mensagem"></textarea>
+          <button type="submit" id="btn-mensagem" name="btn-mensagem" class="btn btn-success">Enviar</button>
+        </form>        
+      </div>
+
+      <div id="wpp">
+        <p>Chame no Whatsapp:</p>
+        <a href="https://api.whatsapp.com/send?phone=5521%2097262-0508" target="_blank"><strong><i class="fa-brands fa-whatsapp"></i>(21)97262-0508</strong></a>
+      </div>
+      <div id="cont-endereco">
+        <p>Ou então nos faça uma visita: </p>
+        <a href="https://goo.gl/maps/ZFh1Xid2MowYR6r9A" target="_blank"><strong><i class="fa-solid fa-location-dot"></i>Estr. de Jacarepaguá, 7744 - Freguesia de Jacarepaguá, Rio de Janeiro - RJ, 22755-158</strong></a>
+      </div>      
+    </div>
+
       <div id="cadastro" class="visually-hidden">
         <form class="form">
           <h4>Cadastre-se</h4>
@@ -70,11 +90,10 @@
           <button type="submit" class="btn btn-primary" id="btn-cadastrar">Cadastrar</button>
         </form>
       </div>
-    </div>
 
-    <div class="btn-cadastro">
-      <div class="container-cadastro">       
-          <a href="#cadastro" class="btn btn-lg btn-success" ><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+    <div class="btn-contato">
+      <div class="container-contato">       
+          <a href="#contato" id="btn-contato-bubble" class="btn btn-lg btn-success" ><i class="fa-solid fa-comment"></i></a>
       </div>
     </div>
 
@@ -110,7 +129,7 @@
               <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
+              <a class="nav-link nav-modal-open" href="#cadastro" rel="cadastro">Cadastro</a>
             </li>
           </ul>
         </div>
@@ -298,18 +317,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div id="contato" class="visually-hidden">
-      <div id="wpp">
-        <p>Chame no Whatsapp:</p>
-        <a href="https://api.whatsapp.com/send?phone=5521%2097262-0508" target="_blank"><strong><i class="fa-brands fa-whatsapp"></i>(21)97262-0508</strong></a>
-      </div>
-      <div id="cont-endereco">
-        <p>Ou então nos faça uma visita: </p>
-        <a href="https://goo.gl/maps/ZFh1Xid2MowYR6r9A" target="_blank"><strong><i class="fa-solid fa-location-dot"></i>Estr. de Jacarepaguá, 7744 - Freguesia de Jacarepaguá, Rio de Janeiro - RJ, 22755-158</strong></a>
-      </div>
-      
     </div>
     
     

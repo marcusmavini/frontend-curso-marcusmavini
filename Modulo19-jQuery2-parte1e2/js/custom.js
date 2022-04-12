@@ -55,12 +55,12 @@ $(document).ready(function () {
 
 $('.btn-lg').on('click', function(e){
   e.preventDefault();
-  const cadastro = $('#cadastro');
+  const contato = $('#contato');
 
-  if(cadastro.hasClass('visually-hidden')){
-    $(cadastro).removeClass('visually-hidden');
+  if(contato.hasClass('visually-hidden')){
+    $(contato).removeClass('visually-hidden');
   }else{
-    $(cadastro).addClass('visually-hidden');
+    $(contato).addClass('visually-hidden');
   }
   
 });

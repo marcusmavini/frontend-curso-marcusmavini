@@ -717,7 +717,7 @@ a {
   background-color: rgb(255, 228, 228) !important;
 }
 
-.btn-cadastro .container-cadastro{
+.btn-contato .container-contato{
   position: fixed;
   z-index: 1000;
   width: 100px;
@@ -728,43 +728,72 @@ a {
   text-align: center;
 }
 
-#cadastro{
+#contato{
   width: 350px;
   height: 400px;
   z-index: 1000;
-  bottom: 100px;
-  right: 50px;
+  bottom: 90px;
+  right: 54px;
   position: fixed;
   border-radius: 10px;
   overflow: scroll;
   background-color: #fff;
   filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
   -webkit-filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
-  padding: 5px;
+  padding: 10px 20px 20px 20px;
 }
 
-#cadastro::-webkit-scrollbar {
+#contato::-webkit-scrollbar {
   width: 10px;               /* width of the entire scrollbar */
 }
 
-#cadastro::-webkit-scrollbar-track {
+#contato::-webkit-scrollbar-track {
   color: white;      /* color of the tracking area */
 }
 
-#cadastro::-webkit-scrollbar-thumb {
+#contato::-webkit-scrollbar-thumb {
   background-color: rgb(202, 79, 128);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
 }
 
-#btn-cadastrar{
+#btn-mensagem{
   background-color: rgb(202, 79, 128);
   border: none;
 }
-#btn-cadastrar:hover{
+#btn-mensagem:hover{
   background-color: rgb(175, 67, 110);
 }
+.enviar-mensagem{
+  width: 100%;
+}
 
+#contato-form input{
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(202, 79, 128);
+}
+
+#contato-form input:focus{
+  border: 2px solid rgb(255, 202, 202);
+}
+
+#contato-form textarea{
+  border-radius: 10px;
+  border: 2px solid rgb(202, 79, 128);
+  padding: 10px;
+  width: 90%;
+}
+
+#contato-form #btn-mensagem{
+  width: 90%;
+}
+
+#btn-contato-bubble{
+  border-radius: 50%;
+}
 
 /* Responsive Style */
 @media (max-width: 991px) {
@@ -838,11 +867,11 @@ a {
 
 
 @media (max-width: 425px){
-  .btn-cadastro .container-cadastro{
+  .btn-contato .container-contato{
     bottom: 10px;
     right: 5px;
   }
-  #cadastro{
+  #contato{
     bottom: 80px;
   }
 
@@ -856,13 +885,13 @@ a {
 }
 
 @media (max-width: 375px){
-  #cadastro{
+  #contato{
     width: 300px;
     bottom: 80px;
   }
 }
 @media (max-width: 320px){
-  #cadastro{
+  #contato{
     width: 250px;
     bottom: 80px;
   }
