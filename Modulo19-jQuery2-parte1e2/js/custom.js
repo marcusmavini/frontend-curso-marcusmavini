@@ -123,6 +123,9 @@ $('.btn-lg').on('click', function(e){
   $('body').on('blur', '#email', function(e){
     validate($(this));
   })
+  $('body').on('blur', '#senha', function(e){
+    validate($(this));
+  })
 
 $('body').on('focus', '#date', function(){
   $(this).datepicker();

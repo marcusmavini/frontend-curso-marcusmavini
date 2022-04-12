@@ -737,9 +737,9 @@ a {
   position: fixed;
   border-radius: 10px;
   overflow: scroll;
-  background-color: #fff;
-  filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
+  background-color: #fff;  
   -webkit-filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
+  filter: drop-shadow(1px 1px 5px rgb(66, 66, 66));
   padding: 10px 20px 20px 20px;
 }
 
